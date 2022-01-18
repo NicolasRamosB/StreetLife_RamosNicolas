@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Street Life - Contacto</title>
+    <link rel="icon" href="../img/iconostreetlife.png">
+    <link rel="stylesheet" type="text/css" href="../css/estilo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@300&display=swap" rel="stylesheet">
+    
+    
+</head>
+
+<body>
+
+    <header>
+        <nav class="navInicial">
+            <ul class="ulNavegacion">
+                <li class="liLogo"><a href="../index.html" class ="logoNav"> ✯Street Life✯ </a></li>
+                <li class="listaNav"><a href="../html/indumentaria.html" class="linkNav"> ~INDUMENTARIA~</a></li>
+                <li class="listaNav"><a href="../html/fixie.html" class="linkNav"> ~FIXIE~</a></li>
+                <li class="listaNav"><a href="../html/nosotros.html" class="linkNav"> ~NOSOTROS~</a></li>
+                <li class="listaNav"><a href="../html/contacto.html" class="linkNav active"> ~CONTACTO~</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <main class="mainIndex">
+        <section id="sectionContacto">
+            <form id="form">
+                <div class="divForm">
+                    <label for="Nombre">Nombre</label>
+                    <input type="text" placeholder="Ingrese su nombre" required id="Nombre"  class="inputForm">
+                </div>
+                <div class="divForm">
+                    <label for="Email">Email</label>
+                    <input type="email" placeholder="Ingrese su email" required id="Email" class="inputForm">
+                </div>
+                <div class="divForm">
+                    <label for="Telefono">Telefono</label>
+                    <input type="phone" placeholder="000-00-00000000" id="Telefono" class="inputForm">
+                </div>
+                <div class="divForm">
+                    <textarea name="Mensaje" id="Mensaje" cols="30" rows="10" placeholder="Mensaje" class="inputForm"></textarea>
+                </div>
+                <div class="divForm">
+                    <input type="submit" class="boton">
+                    <input type="reset" class="boton">
+                </div>
+            </form>
+        </section>
+        <div class="gps">
+            <p> <img src="../img/gps.png" alt="Gps"> Av. Hipólito Yrigoyen 9399, Lomas de Zamora, Provincia de Buenos Aires </p>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d974.4505454131454!2d-58.402872908667796!3d-34.764458437195536!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x2221c5d1542e71d4!2sAdidas%20Outlet%20Lomas%20de%20Zamora!5e0!3m2!1ses!2sar!4v1639263671396!5m2!1ses!2sar"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+
+    </main>
+
+    <footer>
+
+        <div>
+            <p class="parrafoFooter">Seguinos en nuestras redes.</p>
+
+            <ul id="ulFooterRedes">
+                <li class="liFooterRedes" ><a href="https://www.instagram.com/street.life.concept/?hl=es"><img class="imgRedes" src="../img/instagram.png" alt="instagram"></a></li>
+                <li class="liFooterRedes"><a href="https://web.whatsapp.com/"><img class="imgRedes" src="../img/whatsapp.png" alt="Wpp"></a></li>
+                <li class="liFooterRedes"><a href="https://es-la.facebook.com/"><img class="imgRedes" src="../img/facebook.png" alt="Facebook"></a></li>
+            </ul>
+        </div>
+
+        <div id="divFooterCR">
+            <a href="../html/contacto.html" class="atencionAlCliente"> Atencion al cliente </a>
+            <p>Copyright© - Street Life 2021</p>
+        </div>
+
+    </footer>
+
+
+</body>
+
+</html>

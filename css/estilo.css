@@ -1,18 +1,16 @@
-
 * {
   margin: 0;
   padding: 0;
   font-family: "Saira Condensed", sans-serif;
   text-shadow: 1px 2px 4px rgb(0, 0, 0);
-
 }
 
 @font-face {
-  font-family: 'iglesiaregular';
-  src: url('../fuentes/iglesia-webfont.woff2') format('woff2'),
-       url('../fuentes/iglesia-webfont.woff') format('woff'),
-       url('../fuentes/iglesia-webfont.ttf') format('truetype'),
-       url('../fuentes/iglesia-webfont.svg#iglesiaregular') format('svg');
+  font-family: "iglesiaregular";
+  src: url("../fuentes/iglesia-webfont.woff2") format("woff2"),
+    url("../fuentes/iglesia-webfont.woff") format("woff"),
+    url("../fuentes/iglesia-webfont.ttf") format("truetype"),
+    url("../fuentes/iglesia-webfont.svg#iglesiaregular") format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -24,64 +22,67 @@ body {
 
 /*--------- Titulo Header ---------- */
 
-.divH1 {
+h1{
+  margin-bottom: -1.5px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.titleStreet {
+  overflow: hidden;
+  text-decoration: none;
+  text-align: center;
+  color: #ffffff;
+  font-family: "iglesiaregular", sans-serif;
+  text-rendering: optimizeLegibility;
+  font-weight: bold;
   background-image: url(../img/callecongrafitis.jpg);
   background-size: cover;
   background-position: center;
 }
 
-.titleStreet {
-
-  overflow: hidden;
-  text-decoration: none;
-  text-align: center;
-  color: #ffffff;
-  font-family: 'iglesiaregular', sans-serif;
-  text-rendering: optimizeLegibility;
-  font-weight: bold;
+/*--------- Navegador Inicial ---------- */
+.navbar {
+  background-color: rgba(255, 254, 254, 0.856);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
-/*--------- Navegador Inicial ---------- */
-
-.navInicial {
-  background-color: rgba(255, 254, 254, 0.856);
-  position: absolute;
-  top: 0;
-  z-index: 5;
-  width: 100%;
-  display: flex;
-  justify-content: center;
+.navbar-collapse {
+  flex-grow: 1;
+  justify-content: space-evenly;
   align-items: center;
 }
 
 .liLogo {
   list-style: none;
   text-decoration: none;
-}
-
-.logoNav {
-  font-family: 'iglesiaregular', sans-serif;
+  font-family: "iglesiaregular", sans-serif;
   color: rgb(255, 255, 255);
   text-decoration: none;
   background-color: rgba(0, 0, 0, 0.781);
   border-radius: 10px;
   box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.747);
   transition-duration: 0.5s, 0.6s;
+  font-size: 5vh;
 }
 
-.logoNav:hover {
+.liLogo:hover {
   color: #000000;
   background-color: rgb(255, 255, 255);
 }
 
-.ulNavegacion {
+.navbar-nav {
   display: flex;
-  list-style-type: none;
-  overflow: hidden;
-}
-
-.listaNav {
-  display: inline-block;
+  align-items: center;
+  justify-content: flex-end;
+  list-style: none;
+  width: 80%;
+  font-size: 3vh;
 }
 
 .linkNav {
@@ -91,24 +92,24 @@ body {
   text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.384);
   transition-duration: 0.3s, 0.4s;
   font-weight: bold;
+  padding-right: 20px;
+  padding-left: 20px;
+  margin-right: 30px;
 }
 
 .linkNav:hover {
   color: white;
   width: 100%;
   background-color: rgb(0, 0, 0);
-  border-radius: 10px;
+  border-radius: 20px;
   box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.747);
-  transform: scale(3);
 }
 
 .active {
   color: white;
-  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.363);
   box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.747);
 }
-
-
 
 /*================== CSS INDEX ==================*/
 
@@ -128,7 +129,7 @@ video {
 }
 
 .titleMain {
-  font-family: 'iglesiaregular', sans-serif;
+  font-family: "iglesiaregular", sans-serif;
   text-shadow: none;
 }
 
@@ -163,8 +164,6 @@ video {
   transform: scale(1.2);
 }
 
-
-
 /*================== INICIO CSS INDUMENTARIA ==================*/
 
 .indumentaria {
@@ -172,9 +171,12 @@ video {
   text-decoration: none;
   text-align: center;
   color: #ffffff;
-  font-family: 'iglesiaregular', sans-serif;
+  font-family: "iglesiaregular", sans-serif;
   text-rendering: optimizeLegibility;
   font-weight: bold;
+  background-image: url(../img/callecongrafitis.jpg);
+  background-size: cover;
+  background-position: center;
 }
 
 #artMainIndumentaria {
@@ -217,9 +219,12 @@ video {
   text-decoration: none;
   text-align: center;
   color: #ffffff;
-  font-family: 'iglesiaregular', sans-serif;
+  font-family: "iglesiaregular", sans-serif;
   text-rendering: optimizeLegibility;
   font-weight: bold;
+  background-image: url(../img/callecongrafitis.jpg);
+  background-size: cover;
+  background-position: center;
 }
 
 #sectionNosotros {
@@ -242,7 +247,7 @@ video {
 
 .titleArticle {
   text-shadow: 4px 6px 5px rgb(0, 0, 0, 0.747);
-  font-family: 'iglesiaregular', sans-serif;
+  font-family: "iglesiaregular", sans-serif;
   text-shadow: none;
 }
 
@@ -300,13 +305,16 @@ video {
   text-decoration: none;
   text-align: center;
   color: #ffffff;
-  font-family: 'iglesiaregular', sans-serif;
+  font-family: "iglesiaregular", sans-serif;
   text-rendering: optimizeLegibility;
   font-weight: bold;
+  background-image: url(../img/callecongrafitis.jpg);
+  background-size: cover;
+  background-position: center;
 }
 
 .biciTitle {
-  font-family: 'iglesiaregular', sans-serif;
+  font-family: "iglesiaregular", sans-serif;
   text-align: center;
   text-shadow: none;
 }
@@ -561,48 +569,8 @@ footer {
   /*================== INICIO CSS INDEX ==================*/
 
   .titleStreet {
-    margin-top: 8.5cm;;
-    padding-top: 150px;
-    padding-bottom: 150px;
-    height: 50%;
-    font-size: 17vh;
+    font-size: 16vh;
     overflow: hidden;
-  }
-
-  .ulNavegacion {
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    height: 100%;
-  }
-
-  .listaNav {
-    margin-top: 3px;
-    margin-bottom: 3px;
-    border-top: 1px solid rgba(0, 0, 0, 0.404);
-    border-right: 1px solid rgba(0, 0, 0, 0.404);
-    border-bottom: 1px solid rgba(0, 0, 0, 0.404);
-    border-left: 1px solid rgba(0, 0, 0, 0.404);
-    padding-top: 10px;
-    padding-bottom: 10px;
-    font-size: 150%;
-  }
-
-  .linkNav {
-    padding-right: 60px;
-    padding-left: 60px;
-  }
-
-  .liLogo {
-    text-align: center;
-  }
-
-  .logoNav {
-    font-size: 250%;
-  }
-
-  .liLogo {
-    padding-top: 10px;
   }
 
   #divVideo {
@@ -614,7 +582,6 @@ footer {
     border-radius: 10px;
     width: 100%;
   }
- 
 
   .titleMain {
     padding-top: 50px;
@@ -694,10 +661,6 @@ footer {
   /*================== INICIO CSS NOSOTROS ==================*/
 
   .nosotros {
-    margin-top: 8.5cm;
-    padding-top: 100px;
-    padding-bottom: 100px;
-    height: 50%;
     font-size: 8vh;
     overflow: hidden;
   }
@@ -775,10 +738,6 @@ footer {
   /*================== INICIO CSS FIXIE ==================*/
 
   .fixie {
-    margin-top: 8.5cm;
-    padding-top: 100px;
-    padding-bottom: 100px;
-    height: 50%;
     font-size: 11vh;
   }
 
@@ -828,9 +787,9 @@ footer {
     font-size: 200%;
   }
 
-  .biciTitle{
+  .biciTitle {
     font-size: 7vh;
-    padding-top:50px;
+    padding-top: 50px;
     text-shadow: none;
   }
 
@@ -841,10 +800,6 @@ footer {
   /*================== INICIO CSS INDUMENTARIA ==================*/
 
   .indumentaria {
-    margin-top: 8.5cm;
-    padding-top: 100px;
-    padding-bottom: 100px;
-    height: 50%;
     font-size: 7.5vh;
   }
 
@@ -893,7 +848,7 @@ footer {
   #form {
     border-radius: 10px;
     width: 100%;
-    margin-top: 8.9cm;
+    margin-top: 2.5cm;
   }
 
   .divForm {
@@ -947,7 +902,6 @@ footer {
   /*================== INICIO CSS BICIS ==================*/
 
   .artPagBici {
-    margin-top: 8.9cm;
     padding: 30px;
     max-width: 90%;
   }
@@ -1009,7 +963,6 @@ footer {
   /*================== INICIO CSS REMERAS ==================*/
 
   .sectionPagRemeras {
-    margin-top: 8.9cm;
     justify-content: center;
     align-items: center;
   }
@@ -1088,42 +1041,7 @@ footer {
 
 @media only screen and (min-width: 600px) {
   .titleStreet {
-    margin-top: 8.3cm;
-    padding-top: 150px;
-    padding-bottom: 150px;
-    height: 50%;
     font-size: 15vh;
-  }
-
-  .ulNavegacion {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 10px;
-    height: 100%;
-    width: 100%;
-  }
-
-  .listaNav {
-    padding-top: 20px;
-    font-size: 150%;
-  }
-
-  .linkNav {
-    padding-right: 10px;
-    padding-left: 10px;
-  }
-
-  .liLogo {
-    text-align: center;
-  }
-
-  .logoNav {
-    font-size: 300%;
-  }
-
-  .liLogo {
-    padding-top: 10px;
   }
 
   #divVideo {
@@ -1209,10 +1127,6 @@ footer {
   /*================== INICIO CSS NOSOTROS ==================*/
 
   .nosotros {
-    margin-top: 8.3cm;
-    padding-top: 100px;
-    padding-bottom: 100px;
-    height: 50%;
     font-size: 17vh;
   }
 
@@ -1284,16 +1198,12 @@ footer {
   /*================== INICIO CSS FIXIE ==================*/
 
   .fixie {
-    margin-top: 8.3cm;
-    padding-top: 100px;
-    padding-bottom: 100px;
-    height: 50%;
     font-size: 20vh;
   }
 
-  .biciTitle{
+  .biciTitle {
     font-size: 10vh;
-    padding-top:50px;
+    padding-top: 50px;
     text-shadow: none;
   }
 
@@ -1339,8 +1249,6 @@ footer {
     height: 100%;
   }
 
-  
-
   .pTitle {
     font-size: 200%;
   }
@@ -1352,7 +1260,7 @@ footer {
   /*================== INICIO CSS BICIS ==================*/
 
   .artPagBici {
-    margin-top: 8.3cm;
+    margin-top: 1.7cm;
     padding: 50px;
     max-width: 70%;
   }
@@ -1421,7 +1329,7 @@ footer {
   /*================== INICIO CSS REMERAS ==================*/
 
   .sectionPagRemeras {
-    margin-top: 8.3cm;
+    margin-top: 1.7cm;
     justify-content: center;
     align-items: center;
   }
@@ -1502,10 +1410,6 @@ footer {
   /*================== INICIO CSS INDUMENTARIA ==================*/
 
   .indumentaria {
-    margin-top: 8.3cm;
-    padding-top: 100px;
-    padding-bottom: 100px;
-    height: 50%;
     font-size: 10vh;
   }
 
@@ -1553,7 +1457,7 @@ footer {
   #form {
     border-radius: 10px;
     width: 100%;
-    margin-top: 8.9cm;
+    margin-top: 3cm;
   }
 
   .divForm {
@@ -1606,28 +1510,7 @@ footer {
 
 @media only screen and (min-width: 768px) {
   .titleStreet {
-    margin-top: 1.9cm;
-    padding-top: 250px;
-    padding-bottom: 300px;
     font-size: 18vh;
-  }
-
-  .navInicial {
-    position: fixed;
-  }
-
-  .ulNavegacion {
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-  }
-
-  .listaNav {
-    font-size: 130%;
-  }
-
-  .logoNav {
-    font-size: 250%;
   }
 
   #divVideo {
@@ -1676,9 +1559,6 @@ footer {
   /*================== INICIO CSS NOSOTROS ==================*/
 
   .nosotros {
-    margin-top: 1.9cm;
-    padding-top: 100px;
-    padding-bottom: 100px;
     font-size: 18vh;
   }
 
@@ -1743,19 +1623,14 @@ footer {
   /*================== INICIO CSS FIXIE ==================*/
 
   .fixie {
-    margin-top: 1.9cm;
-    padding-top: 100px;
-    padding-bottom: 100px;
-    height: 50%;
     font-size: 24vh;
   }
 
-  .biciTitle{
+  .biciTitle {
     font-size: 15vh;
-    padding-top:50px;
+    padding-top: 50px;
     text-shadow: none;
   }
-
 
   #artMainFixie {
     padding-top: 100px;
@@ -1802,10 +1677,6 @@ footer {
   /*================== INICIO CSS INDUMENTARIA ==================*/
 
   .indumentaria {
-    margin-top: 1.9cm;
-    padding-top: 100px;
-    padding-bottom: 100px;
-    height: 50%;
     font-size: 15vh;
   }
 
@@ -1920,7 +1791,7 @@ footer {
   /*================== INICIO CSS BICIS ==================*/
 
   .artPagBici {
-    margin-top: 1.9cm;
+    margin-top: 1.7cm;
 
     max-width: 70%;
   }
@@ -1957,14 +1828,54 @@ footer {
   }
 }
 
+@media only screen and (max-width: 992px) {
+  .navbar-expand-lg .navbar-nav {
+    flex-direction: column;
+    align-items:flex-start;
+    justify-content: space-evenly;
+    width: 100%;
+  }
+
+  .liLogo{
+    font-size: 4.5vh;
+  }
+
+  .liNav{
+    display:flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .linkNav {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    width: 170px;
+    text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.384);
+    transition-duration: 0.3s, 0.4s;
+    font-weight: bold;
+    padding:10px;
+    border: 2px solid rgb(146, 146, 146) ;
+    text-align: center;
+  }
+  
+  .linkNav:hover {
+    color: white;
+    width: 170px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 20px;
+    box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.747);
+  }
+  .active {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.363);
+    box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.747);
+  }
+}
+
 @media only screen and (min-width: 1024px) {
   .titleStreet {
     font-size: 25vh;
-  }
-
-  .logoNav {
-    margin-right: 60px;
-    font-size: 250%;
   }
 
   #divVideo {
@@ -2005,7 +1916,7 @@ footer {
 
   /*================== INICIO CSS NOSOTROS ==================*/
 
-  .nosotros {
+  .nosotros { 
     font-size: 25vh;
   }
 
@@ -2013,7 +1924,6 @@ footer {
     padding-top: 50px;
     padding-bottom: 50px;
     font-size: 13vh;
-    
   }
 
   .Iconos {
@@ -2060,18 +1970,15 @@ footer {
 
   /*================== INICIO CSS FIXIE ==================*/
 
-
   .fixie {
-    margin-top: 1.9cm;
     font-size: 24vh;
   }
 
-  .biciTitle{
+  .biciTitle {
     font-size: 15vh;
-    padding-top:50px;
+    padding-top: 50px;
     text-shadow: none;
   }
-
 
   .bici1 {
     width: 60%;
@@ -2086,8 +1993,8 @@ footer {
   }
 
   /*================== INICIO CSS INDUMENTARIA ==================*/
-  .Indumentaria {
-    margin-top: 1.9cm;
+  .indumentaria {
+    
     font-size: 24vh;
   }
 
@@ -2109,7 +2016,7 @@ footer {
 
   /*================== INICIO CSS CONTACTO ==================*/
   #sectionContacto {
-    padding: 150px;
+    padding: 200px;
   }
 
   #form {
@@ -2175,16 +2082,12 @@ footer {
 
   /*================== INICIO CSS REMERAS ==================*/
 
-  .sectionPagRemeras {
-    margin-top: 1.9cm;
-  }
-
   .artPagRemeras {
     margin: 100px;
     width: 60%;
   }
 
-  .imgPagRemeras{
+  .imgPagRemeras {
     max-width: 60%;
   }
 }
@@ -2192,18 +2095,6 @@ footer {
 @media only screen and (min-width: 1440px) {
   .titleStreet {
     font-size: 30vh;
-  }
-
-  .listaNav {
-    font-size: 200%;
-  }
-
-  .liLogo {
-    margin-right: 150px;
-  }
-
-  .logoNav {
-    font-size: 300%;
   }
 
   #divVideo {
@@ -2298,7 +2189,6 @@ footer {
   /*================== INICIO CSS FIXIE ==================*/
 
   .fixie {
-    margin-top: 2cm;
     font-size: 24vh;
   }
 
@@ -2332,7 +2222,6 @@ footer {
   /*================== INICIO CSS INDUMENTARIA ==================*/
 
   .indumentaria {
-    margin-top: 2.2cm;
     font-size: 24vh;
   }
 
@@ -2419,7 +2308,7 @@ footer {
   /*================== INICIO CSS REMERAS ==================*/
 
   .sectionPagRemeras {
-    margin-top: 2cm;
+    margin-top: 2.5cm;
   }
 
   .artPagRemeras {

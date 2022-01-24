@@ -34,48 +34,14 @@
           <li class="liNav"><a class="linkNav" href="fixie.html">FIXIE</a></li>
           <li class="liNav"><a class="linkNav" href="nosotros.html">NOSOTROS</a></li>
           <li class="liNav"><a class="linkNav" href="contacto.html">CONTACTO</a></li>
+          <li class="liNavCarrito mt-4"><a class="linkNavCarrito " href="#"><img src="../img/carrito2.png" alt="carrito2"></a></li>
         </ul>
       </div>
     </div>
   </nav>  
 
     <header>
-            <h1 class="indumentaria animated-shadow" >Indumentaria</h1>
-  
-        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-indicators">
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
-            </div>
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="..." class="d-block w-100" alt="...">
-              </div>
-              <div class="carousel-item">
-                <img src="..." class="d-block w-100" alt="...">
-              </div>
-              <div class="carousel-item">
-                <img src="..." class="d-block w-100" alt="...">
-              </div>
-              <div class="carousel-item">
-                <img src="..." class="d-block w-100" alt="...">
-              </div>
-              <div class="carousel-item">
-                <img src="..." class="d-block w-100" alt="...">
-              </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-          </div>
+            <h1 class="indumentaria container-fluid animated-shadow m-0 p-5">Indumentaria</h1>
     </header>
 
 
@@ -84,29 +50,107 @@
 
             <h2 class="biciTitle">Remeras</h2>
 
+            <article id="carouselExampleIndicators" class="carousel slide pt-5 mb-5" data-bs-ride="carousel">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="../img/DSC_2194.jpg" class="d-block w-100" alt="remera1">
+                </div>
+                <div class="carousel-item">
+                  <img src="../img/DSC_2171.jpg" class="d-block w-100" alt="remera2">
+                </div>
+                <div class="carousel-item">
+                  <img src="../img/DSC_0074.jpg" class="d-block w-100" alt="remera3">
+                </div>
+                <div class="carousel-item">
+                  <img src="../img/2-16.jpg" class="d-block w-100" alt="remera4">
+                </div>
+                <div class="carousel-item">
+                  <img src="../img/2-4.jpg" class="d-block w-100" alt="remera5">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </article>
+
             <article id="artMainIndumentaria">
 
-                <div class="remera1 divRemera">
-                    <a href="../html/remera1.html"><img src="../img/Remera1.jpg" alt="remera1" class="imgRemeras" ></a>
-                    <p class="pTitle">Remera 1</p>
-                    <p class="precio">$1200</p>
-                    <a href="" class="aCarrito"><img class="carrito" src="../img/carrito.png" alt="carrito"></a>
-                </div>
+                <div class="remera1  divRemera">
+                    <a href="../html/remera1.html"><img src="../img/Remera1.jpg" alt="remera1" class="imgRemeras border border-dark" ></a>
+                    <p class="pTitle">Remera 1  </p>
+                    <p class="precio">$1200 </p>
+                    <a type="button" data-bs-toggle="modal" data-bs-target="#myModal4" class="aCarrito" ><img class="carrito" src="../img/carrito.png" alt="carrito"></a>
 
-                <div class="remera2 divRemera">
-                    <a href="../html/remera2.html"><img src="../img/remera2.jpg" alt="remera2" class="imgRemeras"></a>
+
+                    <!-- Alerta hecha en Modal -->
+                    <div class="modal fade" id="myModal4" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content" role="document">
+                                <div class="modal-header bg-success bg-opacity-75">
+                                    <h5 class="modal-title  text-white" id="exampleModalLabel">REMERA 1 se ha añadido al carrito</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="remera2  divRemera">
+                    <a href="../html/remera2.html"><img src="../img/remera2.jpg" alt="remera2" class="imgRemeras border border-dark"></a>
                     <p class="pTitle">Remera 2</p>
                     <p class="precio">$1300</p>
-                    <a href="" class="aCarrito"><img class="carrito" src="../img/carrito.png" alt="carrito"></a>
+                    <a type="button" data-bs-toggle="modal" data-bs-target="#myModal5" class="aCarrito" ><img class="carrito" src="../img/carrito.png" alt="carrito"></a>
+
+
+                    <!-- Alerta hecha en Modal -->
+                    <div class="modal fade" id="myModal5" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content" role="document">
+                                <div class="modal-header bg-success bg-opacity-75">
+                                    <h5 class="modal-title  text-white" id="exampleModalLabel">REMERA 2 se ha añadido al carrito</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="remera3 divRemera">
-                    <a href="../html/remera3.html"><img src="../img/remera3.jpg" alt="remera3" class="imgRemeras"></a>
+                    <a href="../html/remera3.html"><img src="../img/remera3.jpg" alt="remera3" class="imgRemeras border border-dark"></a>
                     <p class="pTitle">Remera 3 </p>
                     <p class="precio">$1400</p>
-                    <a href="" class="aCarrito"><img class="carrito" src="../img/carrito.png" alt="carrito"></a>
-                </div>
+                    <a type="button" data-bs-toggle="modal" data-bs-target="#myModal6" class="aCarrito" ><img class="carrito" src="../img/carrito.png" alt="carrito"></a>
 
+
+                    <!-- Alerta hecha en Modal -->
+                    <div class="modal fade" id="myModal6" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content" role="document">
+                                <div class="modal-header bg-success bg-opacity-75">
+                                    <h5 class="modal-title  text-white" id="exampleModalLabel">REMERA 3 se ha añadido al carrito</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                
             </article>
         </section>
     </main>
@@ -129,8 +173,6 @@
         </div>
 
     </footer>
-
-
 </body>
 
 </html>

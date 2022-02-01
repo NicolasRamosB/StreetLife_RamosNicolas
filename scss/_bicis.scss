@@ -1,0 +1,56 @@
+
+
+@import "variables.scss";
+
+/*================== INICIO CSS BICIS ==================*/
+
+.sectionPagBicis {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    .divPagBici {
+      display: flex;
+      background-color: $bgProductos;
+  
+      .titlePagBici {
+        color: rgb(255, 255, 255);
+        text-align: center;
+      }
+  
+      .descripcionBici {
+        text-align: left;
+        text-shadow: none;
+        font-weight: bold;
+      }
+  
+      img,
+      svg {
+        vertical-align: none;
+      }
+  
+      .divDescripcion {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+  
+      .divPrecios {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        background-color: rgba(255, 255, 255, 0.753);
+  
+        .precioProducto {
+          text-shadow: none;
+          font-weight: bold;
+          background-color: rgba(255, 255, 255, 0.733);
+        }
+      }
+  
+      .botonComprar {
+        text-align: center;
+      }
+    }
+  }
+  

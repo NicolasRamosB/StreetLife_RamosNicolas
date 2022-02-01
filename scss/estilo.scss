@@ -1,0 +1,2140 @@
+
+@import "index.scss";
+@import "indumentaria.scss";
+@import "fixie.scss";
+@import "nosotros.scss";
+@import "contacto.scss";
+@import "remeras.scss";
+@import "bicis.scss";
+@import "variables.scss";
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Saira Condensed", sans-serif;
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "iglesiaregular";
+  src: url("../fuentes/iglesia-webfont.woff2") format("woff2"),
+    url("../fuentes/iglesia-webfont.woff") format("woff"),
+    url("../fuentes/iglesia-webfont.ttf") format("truetype"),
+    url("../fuentes/iglesia-webfont.svg#iglesiaregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  background-image: url(../img/max-van-den-oetelaar-uymG7UVPXpI-unsplash.jpg);
+  background-size: cover;
+}
+
+/*======================= NAVEGADOR =======================*/
+.navbar {
+  background-color: rgba(255, 254, 254, 0.856);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+
+  .navbar-collapse {
+    flex-grow: 1;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .liLogo {
+    list-style: none;
+    text-decoration: none;
+    font-family: $tipografiaTitulos;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    background-color: rgba(0, 0, 0, 0.781);
+    border-radius: 10px;
+    box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.747);
+    transition-duration: 0.5s, 0.6s;
+    font-size: 5vh;
+    font-weight: normal;
+    text-shadow: 2px 3px 3px rgba(0, 0, 0, 0.541);
+  }
+
+  .liLogo:hover {
+    color: #020202;
+    background-color: rgb(255, 255, 255);
+  }
+
+  .navbar-nav {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    list-style: none;
+    width: 80%;
+    font-size: 3vh;
+
+    .linkNav {
+      color: rgb(0, 0, 0);
+      text-decoration: none;
+      width: 100%;
+      text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.384);
+      transition-duration: 0.3s, 0.4s;
+      font-weight: bold;
+      padding-right: 20px;
+      padding-left: 20px;
+      margin-right: 10px;
+    }
+
+    .linkNav:hover {
+      color: white;
+      width: 100%;
+      background-color: rgb(0, 0, 0);
+      border-radius: 20px;
+      box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.747);
+    }
+
+    .linkNavCarrito {
+      object-fit: cover;
+      width: 100%;
+      margin-left: 10px;
+    }
+
+    .active {
+      color: white;
+      background-color: rgba(0, 0, 0, 0.363);
+      box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.747);
+    }
+  }
+}
+
+/*======================= FOOTER =======================*/
+.footer {
+  background-color: rgba(0, 0, 0, 0.877);
+
+  &__parrafo {
+    text-align: center;
+    color: white;
+  }
+
+  &__ulRedes {
+    display: flex;
+    list-style: none;
+    overflow: hidden;
+  }
+
+  &__divCR {
+    color: white;
+
+    .footer__atencionAlCliente {
+      text-decoration: underline;
+      color: rgb(255, 96, 68);
+      transition-duration: 1s, 2s;
+    }
+
+    .footer__atencionAlCliente:hover {
+      color: rgb(253, 40, 2);
+      transform: color;
+    }
+  }
+}
+
+ol,ul {
+  padding-left: 0rem;
+}
+
+/*--------------------ANIMACION DE TITULO HEADER---------------------- */
+.animated-shadow {
+  animation: move linear 2000ms infinite;
+  z-index: 2;
+}
+
+@keyframes move {
+  0% {
+    text-shadow: 4px -4px 0 #da0641, 3px -3px 0 #da0641, 2px -2px 0 #da0641,
+      1px -1px 0 #da0641, -4px 4px 0 #13f1fc, -3px 3px 0 #13f1fc,
+      -2px 2px 0 #13f1fc, -1px 1px 0 #13f1fc;
+  }
+
+  25% {
+    text-shadow: -4px -4px 0 #13f1fc, -3px -3px 0 #13f1fc, -2px -2px 0 #13f1fc,
+      -1px -1px 0 #13f1fc, 4px 4px 0 #da0641, 3px 3px 0 #da0641,
+      2px 2px 0 #da0641, 1px 1px 0 #da0641;
+  }
+
+  50% {
+    text-shadow: -4px 4px 0 #da0641, -3px 3px 0 #da0641, -2px 2px 0 #da0641,
+      -1px 1px 0 #da0641, 4px -4px 0 #13f1fc, 3px -3px 0 #13f1fc,
+      2px -2px 0 #13f1fc, 1px -1px 0 #13f1fc;
+  }
+
+  75% {
+    text-shadow: 4px 4px 0 #13f1fc, 3px 3px 0 #13f1fc, 2px 2px 0 #13f1fc,
+      1px 1px 0 #13f1fc, -4px -4px 0 #da0641, -3px -3px 0 #da0641,
+      -2px -2px 0 #da0641, -1px -1px 0 #da0641;
+  }
+
+  100% {
+    text-shadow: 4px -4px 0 #da0641, 3px -3px 0 #da0641, 2px -2px 0 #da0641,
+      1px -1px 0 #da0641, -4px 4px 0 #13f1fc, -3px 3px 0 #13f1fc,
+      -2px 2px 0 #13f1fc, -1px 1px 0 #13f1fc;
+  }
+}
+
+/*--------------------MEDIA QUERY---------------------- */
+
+@media only screen and (max-width: 600px) {
+  /*================== INICIO CSS INDEX ==================*/
+
+  .titleStreet {
+    font-size: 16vh;
+    overflow: hidden;
+  }
+
+  #divVideo {
+    padding-top: 50px;
+    max-width: 100%;
+
+    video {
+      border-radius: 10px;
+      width: 100%;
+    }
+  }
+
+  .titleMainIndex {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+    font-size: 250%;
+  }
+
+  #divMainIndex {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .imgMainIndex {
+      width: 80%;
+      height: 70%;
+    }
+
+    .parrafoImgIndex {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding-bottom: 30px;
+      padding-top: 50px;
+      font-size: 25px;
+      width: 80%;
+
+      #linkNosotros {
+        font-size: 130%;
+      }
+    }
+  }
+
+  /*================== INICIO CSS FOOTER ==================*/
+  .footer {
+    &__parrafo {
+      padding-top: 20px;
+      padding-bottom: 20px;
+      font-size: 150%;
+    }
+
+    &__ulRedes {
+      text-align: center;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+
+      .footer__liRedes {
+        width: 40%;
+        height: 40%;
+
+        .footer__imgRedes {
+          width: 30%;
+          height: 30%;
+          transition-duration: 0.7s, 1s;
+        }
+
+        .footer__imgRedes:hover {
+          width: 25%;
+          transform: rotate(360deg);
+        }
+      }
+    }
+
+    &__divCR {
+      text-align: right;
+      padding-top: 20px;
+      padding-right: 20px;
+      padding-bottom: 20px;
+
+      .footer__atencionAlCliente {
+        color: rgb(255, 99, 71);
+        font-size: 200%;
+      }
+    }
+  }
+  /*================== INICIO CSS NOSOTROS ==================*/
+
+  .nosotros {
+    font-size: 8vh;
+    overflow: hidden;
+  }
+
+  .divMainTitle {
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+    .titleArticle {
+      padding-bottom: 30px;
+      text-align: center;
+      font-size: 8vh;
+    }
+  }
+
+  .divMainImage {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .divIconoP {
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center;
+      gap: 20px;
+      margin-top: 30px;
+      margin-bottom: 30px;
+
+      .Iconos {
+        width: 15%;
+      }
+
+      .parrafosMainNosotros {
+        margin-top: 10px;
+        margin-bottom: 40px;
+        text-align: center;
+        font-size: 150%;
+        width: 80%;
+        height: 80%;
+      }
+    }
+
+    #foto1 {
+      width: 90%;
+      height: 400px;
+    }
+    #foto3 {
+      width: 90%;
+      height: 400px;
+    }
+  }
+
+  .divMainImage2 {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .divIconoP {
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center;
+      gap: 20px;
+      margin-top: 30px;
+      margin-bottom: 30px;
+
+      .Iconos {
+        width: 15%;
+      }
+
+      .parrafosMainNosotros {
+        margin-top: 10px;
+        margin-bottom: 40px;
+        text-align: center;
+        font-size: 150%;
+        width: 80%;
+        height: 80%;
+      }
+    }
+
+    #foto2 {
+      width: 90%;
+      height: 400px;
+    }
+  }
+
+  .divLinkContactate {
+    margin-bottom: 50px;
+
+    #linkContactate {
+      text-align: center;
+      font-size: 200%;
+    }
+  }
+
+  /*================== INICIO CSS FIXIE ==================*/
+
+  .fixie {
+    font-size: 11vh;
+  }
+
+  #artMainFixie {
+    padding-bottom: 100px;
+    width: 100%;
+    grid-template-columns: 80%;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+      "bici1"
+      "bici2"
+      "bici3";
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+
+    .bici1 {
+      grid-area: bici1;
+    }
+
+    .bici2 {
+      grid-area: bici2;
+    }
+
+    .bici3 {
+      margin-top: 30px;
+      grid-area: bici3;
+    }
+
+    .imgBici {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .carrito {
+    width: 20%;
+  }
+  .aCarrito {
+    background-color: rgba(255, 255, 255, 0.733);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 10px;
+    padding: 5px;
+    width: 70%;
+    text-align: center;
+    text-decoration: none;
+    font-size: 130%;
+    border-radius: 10px;
+    color: rgba(0, 0, 0, 0.753);
+  }
+
+  .aCarrito:hover {
+    color: rgba(88, 37, 37, 0.753);
+  }
+
+  .pTitle {
+    font-size: 200%;
+  }
+
+  .biciTitle {
+    font-size: 7vh;
+    padding-top: 50px;
+    text-shadow: none;
+  }
+
+  .precio {
+    font-size: 130%;
+  }
+
+  /*================== INICIO CSS INDUMENTARIA ==================*/
+
+  .indumentaria {
+    font-size: 7.5vh;
+  }
+
+  #artMainIndumentaria {
+    padding-bottom: 100px;
+    width: 100%;
+    grid-template-columns: 80%;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+      "bici1"
+      "bici2"
+      "bici3";
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+
+    .remera1 {
+      grid-area: bici1;
+    }
+
+    .remera2 {
+      grid-area: bici2;
+    }
+
+    .remera3 {
+      margin-top: 30px;
+      grid-area: bici3;
+    }
+
+    .imgRemeras {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  /*================== INICIO CSS CONTACTO ==================*/
+
+  #sectionContacto {
+    padding: 30px;
+
+    #form {
+      border-radius: 10px;
+      width: 100%;
+      margin-top: 2.5cm;
+
+      .divForm {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        width: 80%;
+
+        .inputForm {
+          width: 100%;
+          min-height: 40px;
+          font-size: 120%;
+          text-align: center;
+        }
+
+        label {
+          color: white;
+          font-size: 140%;
+        }
+
+        .boton {
+          margin-top: 10px;
+          margin-bottom: 10px;
+          padding: 10px;
+          font-size: 120%;
+        }
+      }
+    }
+  }
+
+  .gps {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .gps p {
+    color: rgb(0, 0, 0);
+    font-size: 150%;
+    width: 80%;
+    text-align: center;
+    border-radius: 10px;
+    background-color: rgb(247, 247, 247);
+    padding: 20px;
+    margin: 20px;
+  }
+
+  .gps iframe {
+    margin-top: 30px;
+    padding-bottom: 50px;
+    width: 100%;
+  }
+
+  /*================== INICIO CSS BICIS ==================*/
+
+  .artPagBici {
+    padding: 30px;
+    max-width: 90%;
+
+    .divPagBici {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      max-width: 100%;
+
+      .titlePagBici {
+        color: rgb(255, 255, 255);
+        text-align: center;
+        font-size: 200%;
+      }
+
+      .imgPagBici {
+        max-width: 90%;
+      }
+    }
+
+    .divDescripcion {
+      flex-direction: column-reverse;
+
+      .card-body {
+        margin: 20px;
+
+        .descripcionBici {
+          width: 80%;
+          font-size: 100%;
+          margin: 10px;
+          padding: 10px;
+        }
+      }
+
+      .divPrecios {
+        flex-direction: column;
+        margin: 20px;
+
+        .formasDePago {
+          max-width: 90%;
+        }
+
+        .precioProducto {
+          border-radius: 20px;
+          background-color: rgba(255, 255, 255, 0.733);
+          font-size: 200%;
+          padding: 10px;
+          margin: 10px;
+        }
+      }
+    }
+
+    .botonComprar {
+      background-color: rgb(105, 143, 82);
+      font-size: 160%;
+      padding: 30px;
+      width: 100%;
+      color: white;
+    }
+  }
+
+  /*================== INICIO CSS REMERAS ==================*/
+
+  .sectionPagRemeras {
+    justify-content: center;
+    align-items: center;
+
+    .artPagRemeras {
+      margin: 20px;
+      width: 90%;
+      justify-content: space-evenly;
+      align-items: center;
+      flex-direction: column reverse;
+
+      .divPagRemera {
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+
+        .titlePagRemeras {
+          color: rgb(255, 255, 255);
+          text-align: center;
+          font-size: 200%;
+        }
+        .imgPagRemeras {
+          max-width: 90%;
+        }
+      }
+
+      .divDescripcionRemeras {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .formasDePago {
+          max-width: 90%;
+        }
+
+        .precioProducto {
+          border-radius: 20px;
+          background-color: rgba(255, 255, 255, 0.733);
+          font-size: 200%;
+          padding: 10px;
+          margin: 10px;
+        }
+      }
+
+      .divFildset {
+        border-radius: 10px;
+        flex-direction: row;
+        background-color: rgba(255, 255, 255, 0.733);
+        margin: 10px;
+
+        fieldset {
+          padding: 10px;
+          margin: 10px;
+
+          legend {
+            text-shadow: none;
+            text-align: center;
+            font-size: 150%;
+          }
+
+          select {
+            text-shadow: none;
+            text-align: center;
+            font-size: 150%;
+
+            option {
+              text-shadow: none;
+              text-align: center;
+            }
+          }
+        }
+      }
+      .divDescripcion {
+        flex-direction: column;
+
+        .card-body {
+          margin: 20px;
+
+          .pPagRemeras {
+            width: 80%;
+            font-size: 140%;
+            margin: 10px;
+            padding: 10px;
+            background-color: rgba(255, 255, 255, 0.733);
+            border-radius: 10px;
+            text-shadow: none;
+          }
+        }
+      }
+
+      .botonComprar {
+        background-color: rgb(105, 143, 82);
+        font-size: 160%;
+        padding: 30px;
+        width: 100%;
+        color: white;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  /*================== INICIO CSS INDEX ==================*/
+  .titleStreet {
+    font-size: 15vh;
+  }
+
+  #divVideo {
+    padding-top: 100px;
+    max-width: 100%;
+  }
+
+  .titleMainIndex {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+    font-size: 350%;
+  }
+
+  #divMainIndex {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .imgMainIndex {
+      width: 70%;
+      height: 70%;
+    }
+
+    .parrafoImgIndex {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding-bottom: 30px;
+      padding-top: 50px;
+      font-size: 200%;
+      width: 70%;
+
+      #linkNosotros {
+        font-size: 200%;
+      }
+    }
+  }
+
+  /*================== INICIO CSS FOOTER ==================*/
+  .footer {
+    &__parrafo {
+      padding-top: 20px;
+      padding-bottom: 20px;
+      font-size: 150%;
+    }
+
+    &__ulRedes {
+      text-align: center;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+
+      .footer__liRedes {
+        width: 25%;
+        height: 30%;
+
+        .footer__imgRedes {
+          width: 25%;
+          height: 30%;
+          transition-duration: 0.7s, 1s;
+        }
+
+        .footer__imgRedes:hover {
+          width: 24%;
+          transform: rotate(360deg);
+        }
+      }
+    }
+
+    &__divCR {
+      text-align: right;
+      padding-top: 20px;
+      padding-right: 20px;
+      padding-bottom: 20px;
+
+      .footer__atencionAlCliente {
+        color: rgb(255, 99, 71);
+        font-size: 150%;
+      }
+    }
+  }
+  /*================== INICIO CSS NOSOTROS ==================*/
+
+  .nosotros {
+    font-size: 17vh;
+  }
+
+  .divMainTitle {
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+    .titleArticle {
+      padding-bottom: 30px;
+      text-align: center;
+      font-size: 10vh;
+    }
+  }
+
+  .divMainImage {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .divIconoP {
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center;
+      gap: 20px;
+      margin-top: 30px;
+      margin-bottom: 30px;
+
+      .Iconos {
+        width: 10%;
+      }
+
+      .parrafosMainNosotros {
+        margin-top: 10px;
+        margin-bottom: 40px;
+        text-align: center;
+        font-size: 200%;
+        width: 80%;
+        height: 80%;
+      }
+    }
+
+    #foto1 {
+      width: 80%;
+      height: 400px;
+    }
+    #foto3 {
+      width: 80%;
+      height: 400px;
+    }
+  }
+
+  .divMainImage2 {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .divIconoP {
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center;
+      gap: 20px;
+      margin-top: 30px;
+      margin-bottom: 30px;
+
+      .Iconos {
+        width: 10%;
+      }
+
+      .parrafosMainNosotros {
+        margin-top: 10px;
+        margin-bottom: 40px;
+        text-align: center;
+        font-size: 200%;
+        width: 80%;
+        height: 80%;
+      }
+    }
+
+    #foto2 {
+      width: 80%;
+      height: 400px;
+    }
+  }
+
+  .divLinkContactate {
+    margin-bottom: 50px;
+
+    #linkContactate {
+      text-align: center;
+      font-size: 300%;
+    }
+  }
+
+  /*================== INICIO CSS FIXIE ==================*/
+
+  .fixie {
+    font-size: 20vh;
+  }
+
+  .biciTitle {
+    font-size: 10vh;
+    padding-top: 50px;
+    text-shadow: none;
+  }
+
+  #artMainFixie {
+    padding-bottom: 100px;
+    width: 100%;
+    grid-template-columns: 60%;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+      "bici1"
+      "bici2"
+      "bici3";
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+
+    .bici1 {
+      grid-area: bici1;
+    }
+
+    .bici2 {
+      grid-area: bici2;
+    }
+
+    .bici3 {
+      grid-area: bici3;
+    }
+
+    .imgBici {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .carrito {
+    width: 20%;
+  }
+  .aCarrito {
+    background-color: rgba(255, 255, 255, 0.733);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 10px;
+    padding: 5px;
+    width: 70%;
+    text-align: center;
+    text-decoration: none;
+    font-size: 130%;
+    border-radius: 10px;
+    color: rgba(0, 0, 0, 0.753);
+  }
+
+  .aCarrito:hover {
+    color: rgba(88, 37, 37, 0.753);
+  }
+
+  .pTitle {
+    font-size: 200%;
+  }
+
+  .precio {
+    font-size: 130%;
+  }
+
+  /*================== INICIO CSS BICIS ==================*/
+
+  .artPagBici {
+    margin-top: 1.7cm;
+    padding: 50px;
+    max-width: 70%;
+
+    .divPagBici {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      max-width: 100%;
+      border-radius: 10px;
+
+      .titlePagBici {
+        font-size: 300%;
+        padding: 10px;
+      }
+
+      .imgPagBici {
+        max-width: 90%;
+      }
+    }
+
+    .divDescripcion {
+      flex-direction: column;
+
+      .divPrecios {
+        flex-wrap: wrap;
+        flex-direction: row;
+        margin: 20px;
+        width: 70%;
+
+        .precioProducto {
+          font-size: 200%;
+          padding: 10px;
+          margin: 10px;
+        }
+
+        .formasDePago {
+          border-radius: 10px;
+          max-width: 60%;
+        }
+      }
+
+      .descripcionBici {
+        width: 80%;
+        font-size: 100%;
+        margin: 20px;
+        padding: 10px;
+      }
+    }
+
+    .botonComprar {
+      background-color: $bgBotonComprar;
+      font-size: 160%;
+      padding: 30px;
+      width: 100%;
+      color: $colorLetraBotonComprar;
+    }
+  }
+
+  /*================== INICIO CSS REMERAS ==================*/
+
+  .sectionPagRemeras {
+    justify-content: center;
+    align-items: center;
+
+    .artPagRemeras {
+      margin: 20px;
+      width: 80%;
+      justify-content: space-evenly;
+      align-items: center;
+      flex-direction: column reverse;
+
+      .divPagRemera {
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+
+        .titlePagRemeras {
+          color: rgb(255, 255, 255);
+          text-align: center;
+          margin: 20px;
+          font-size: 200%;
+        }
+
+        .imgPagRemeras {
+          max-width: 90%;
+        }
+      }
+
+      .divDescripcionRemeras {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin: 20px;
+
+        .precioProducto {
+          font-size: 200%;
+          padding: 10px;
+          margin: 10px;
+          margin-right: 50px;
+        }
+      
+        .formasDePago {
+          border-radius: 10px;
+          max-width: 60%;
+        }
+      
+
+      }
+
+      .divFildset {
+        border-radius: 10px;
+        flex-direction: row;
+        background-color: rgba(255, 255, 255, 0.733);
+        margin: 10px;
+
+        fieldset {
+          padding: 10px;
+          margin: 10px;
+
+          legend {
+            text-shadow: none;
+            text-align: center;
+            font-size: 150%;
+          }
+
+          select {
+            text-shadow: none;
+            text-align: center;
+            font-size: 150%;
+
+            option {
+              text-shadow: none;
+              text-align: center;
+            }
+          }
+        }
+      }
+
+      .divDescripcion {
+        flex-direction: column;
+
+        .card-body {
+          margin: 20px;
+
+          .pPagRemeras {
+            width: 80%;
+            font-size: 140%;
+            margin: 10px;
+            padding: 10px;
+            background-color: rgba(255, 255, 255, 0.733);
+            border-radius: 10px;
+            text-shadow: none;
+          }
+        }
+      }
+      .botonComprar {
+        background-color: $bgBotonComprar;
+        font-size: 160%;
+        padding: 30px;
+        width: 100%;
+        color: $colorLetraBotonComprar;
+      }
+
+    }
+  }
+
+  /*================== INICIO CSS INDUMENTARIA ==================*/
+
+  .indumentaria {
+    font-size: 10vh;
+  }
+
+  #artMainIndumentaria {
+    padding-bottom: 100px;
+    width: 100%;
+    grid-template-columns: 60%;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+      "bici1"
+      "bici2"
+      "bici3";
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+
+    .remera1 {
+      grid-area: bici1;
+    }
+
+    .remera2 {
+      grid-area: bici2;
+    }
+
+    .remera3 {
+      grid-area: bici3;
+    }
+
+    .imgRemeras {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  /*================== INICIO CSS CONTACTO ==================*/
+
+  #sectionContacto {
+    padding: 30px;
+
+    #form {
+      border-radius: 10px;
+      width: 100%;
+      margin-top: 3cm;
+
+      .divForm {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        width: 80%;
+
+        .inputForm {
+          width: 100%;
+          min-height: 40px;
+          font-size: 120%;
+          text-align: center;
+        }
+
+        .boton {
+          margin-top: 10px;
+          margin-bottom: 10px;
+          padding: 10px;
+          font-size: 120%;
+        }
+
+        label {
+          color: white;
+          font-size: 140%;
+        }
+      }
+    }
+  }
+
+  .gps {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .gps p {
+    color: rgb(0, 0, 0);
+    font-size: 150%;
+    width: 80%;
+    text-align: center;
+    border-radius: 10px;
+    background-color: rgb(247, 247, 247);
+    padding: 20px;
+    margin: 20px;
+  }
+
+  .gps iframe {
+    padding-bottom: 50px;
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  /*================== INICIO CSS INDEX ==================*/
+  .titleStreet {
+    font-size: 18vh;
+  }
+
+  #divVideo {
+    padding-top: 80px;
+    max-width: 100%;
+  }
+
+  .titleMainIndex {
+    font-size: 400%;
+  }
+
+  #divMainIndex {
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-bottom: 70px;
+
+    .imgMainIndex {
+      width: 50%;
+      height: 150%;
+    }
+
+    .parrafoImgIndex {
+      text-align: center;
+      padding-bottom: 30px;
+      padding-top: 50px;
+      font-size: 160%;
+      width: 40%;
+      height: 140%;
+    }
+  }
+
+  /*================== INICIO CSS FOOTER ==================*/
+  .footer {
+    &__ulRedes {
+      .footer__liRedes {
+        .footer__imgRedes {
+          width: 25%;
+          height: 25%;
+        }
+
+        .footer__imgRedes:hover {
+          width: 20%;
+        }
+      }
+    }
+
+    &__divCR {
+      .footer__atencionAlCliente {
+        font-size: 150%;
+      }
+    }
+  }
+  /*================== INICIO CSS NOSOTROS ==================*/
+
+  .nosotros {
+    font-size: 18vh;
+  }
+
+  .divMainTitle {
+    justify-content: space-evenly;
+    align-items: center;
+
+    .titleArticle {
+      padding-top: 50px;
+      font-size: 350%;
+    }
+  }
+
+  .divMainImage {
+    flex-direction: row;
+
+    .divIconoP {
+      width: 100%;
+
+      .Iconos {
+        width: 17%;
+      }
+
+      .parrafosMainNosotros {
+        font-size: 140%;
+        width: 80%;
+      }
+    }
+
+    #foto1 {
+      margin-left: 50px;
+      width: 45%;
+      height: 400px;
+    }
+    #foto3 {
+      margin-left: 50px;
+      width: 85%;
+      height: 400px;
+    }
+  }
+
+  .divMainImage2 {
+    flex-direction: row-reverse;
+
+    .divIconoP {
+      width: 100%;
+
+      .Iconos {
+        width: 17%;
+      }
+
+      .parrafosMainNosotros {
+        font-size: 140%;
+        width: 80%;
+      }
+    }
+
+    #foto2 {
+      margin-right: 50px;
+      width: 45%;
+      height: 400px;
+    }
+  }
+
+  .divLinkContactate {
+    margin-top: 50px;
+
+    #linkContactate {
+      margin-bottom: 50px;
+      font-size: 280%;
+    }
+  }
+
+  /*================== INICIO CSS FIXIE ==================*/
+
+  .fixie {
+    font-size: 24vh;
+  }
+
+  .biciTitle {
+    font-size: 15vh;
+    padding-top: 50px;
+    text-shadow: none;
+  }
+
+  #artMainFixie {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    width: 100%;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+      "bici1  bici2"
+      "bici3  bici3";
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+    grid-row-gap: 50px;
+
+    .bici1 {
+      grid-area: bici1;
+      width: 80%;
+    }
+
+    .bici2 {
+      grid-area: bici2;
+      width: 80%;
+    }
+
+    .bici3 {
+      grid-area: bici3;
+      width: 45%;
+    }
+
+    .imgBici {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .pTitle {
+    font-size: 200%;
+  }
+  .precio {
+    font-size: 130%;
+  }
+
+  /*================== INICIO CSS INDUMENTARIA ==================*/
+
+  .indumentaria {
+    font-size: 15vh;
+  }
+
+  #artMainIndumentaria {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    width: 100%;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+      "bici1  bici2"
+      "bici3  bici3";
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+    grid-row-gap: 50px;
+
+    .remera1 {
+      grid-area: bici1;
+      width: 80%;
+    }
+
+    .remera2 {
+      grid-area: bici2;
+      width: 80%;
+    }
+
+    .remera3 {
+      grid-area: bici3;
+      width: 45%;
+    }
+
+    .imgRemeras {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  /*================== INICIO CSS CONTACTO ==================*/
+
+  #sectionContacto {
+    padding: 100px;
+
+    #form {
+      border-radius: 10px;
+      width: 100%;
+      margin-top: 1cm;
+
+      .divForm {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        width: 80%;
+
+        .boton {
+          margin-top: 10px;
+          margin-bottom: 10px;
+          padding: 10px;
+          font-size: 120%;
+        }
+
+        .inputForm {
+          width: 100%;
+          min-height: 40px;
+          font-size: 120%;
+          text-align: center;
+        }
+
+        label {
+          color: white;
+          font-size: 140%;
+        }
+
+        textarea {
+          max-height: 150px;
+        }
+      }
+    }
+  }
+
+  .gps {
+    background-image: linear-gradient(
+      rgba(255, 254, 254, 0),
+      rgba(43, 43, 43, 0.829)
+    );
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 40px;
+  }
+
+  .gps p {
+    color: rgb(0, 0, 0);
+    font-size: 150%;
+    width: 80%;
+    text-align: center;
+    border-radius: 10px;
+    background-color: rgb(247, 247, 247);
+    margin-right: 20px;
+    padding: 20px;
+  }
+
+  .gps iframe {
+    border-radius: 10px;
+    padding-bottom: 50px;
+    width: 100%;
+  }
+
+  /*================== INICIO CSS BICIS ==================*/
+
+  .artPagBici {
+    margin-top: 1.7cm;
+
+    max-width: 70%;
+
+    .descripcionBici {
+      width: 80%;
+      font-size: 100%;
+      margin: 20px;
+      padding: 10px;
+    }
+  }
+
+ 
+
+  /*================== INICIO CSS REMERAS ==================*/
+  .sectionPagRemeras {
+    .artPagRemeras {
+      margin: 100px;
+      width: 70%;
+
+      .divPagRemera {
+      width: 100%;
+
+      .titlePagRemeras {
+        color: rgb(255, 255, 255);
+        text-align: center;
+        margin: 20px;
+        font-size: 200%;
+      }
+      }
+  
+   
+    }
+ }
+}
+
+@media only screen and (max-width: 992px) {
+  /*================== NAVEGADOR EN MEDIA 992px ==================*/
+
+  .navbar-expand-lg .navbar-nav {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    width: 100%;
+
+    .liNav {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      margin-top: 20px;
+
+      .linkNav {
+        color: rgb(0, 0, 0);
+        text-decoration: none;
+        width: 170px;
+        text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.384);
+        transition-duration: 0.3s, 0.4s;
+        font-weight: bold;
+        padding: 10px;
+        border: 2px solid rgb(146, 146, 146);
+        text-align: center;
+      }
+
+      .linkNav:hover {
+        color: white;
+        width: 170px;
+        background-color: rgb(0, 0, 0);
+        border-radius: 20px;
+        box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.747);
+      }
+
+      .active {
+        color: white;
+        background-color: rgba(0, 0, 0, 0.363);
+        box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.747);
+      }
+    }
+  }
+
+  .liLogo {
+    font-size: 4.5vh;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  /*================== NAV ==================*/
+
+  .liLogo {
+    margin-left: 20px;
+  }
+
+  /*================== INICIO CSS INDEX ==================*/
+
+  .titleStreet {
+    font-size: 25vh;
+  }
+
+  #divVideo {
+    padding-right: 50px;
+    padding-left: 50px;
+  }
+
+  .titleMainIndex {
+    font-size: 500%;
+  }
+  #divMainIndex {
+    .imgMainIndex {
+      width: 45%;
+      height: 150%;
+    }
+
+    .parrafoImgIndex {
+      font-size: 180%;
+    }
+  }
+
+  /*================== INICIO CSS FOOTER ==================*/
+  .footer {
+    &__parrafo {
+      font-size: 150%;
+    }
+    &__ulRedes {
+      .footer__liRedes {
+        width: 20%;
+        height: 20%;
+
+        .footer__imgRedes {
+          width: 20%;
+          height: 20%;
+        }
+
+        .footer__imgRedes:hover {
+          width: 17%;
+        }
+      }
+    }
+  }
+  /*================== INICIO CSS NOSOTROS ==================*/
+
+  .nosotros {
+    font-size: 25vh;
+  }
+
+  .titleArticle {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    font-size: 13vh;
+  }
+  .divMainImage {
+    .divIconoP {
+      width: 100%;
+
+      .Iconos {
+        width: 13%;
+      }
+
+      .parrafosMainNosotros {
+        margin-right: 60px;
+        margin-left: 60px;
+        font-size: 200%;
+        width: 80%;
+      }
+    }
+
+    #foto1 {
+      margin-left: 50px;
+      width: 45%;
+      height: 500px;
+    }
+    #foto3 {
+      margin-left: 50px;
+      width: 85%;
+      height: 500px;
+    }
+  }
+
+  .divMainImage2 {
+    .divIconoP {
+      width: 100%;
+
+      .Iconos {
+        width: 13%;
+      }
+
+      .parrafosMainNosotros {
+        margin-right: 60px;
+        margin-left: 60px;
+        font-size: 200%;
+        width: 80%;
+      }
+
+      #foto2 {
+        margin-right: 50px;
+        width: 45%;
+        height: 500px;
+      }
+    }
+  }
+
+  .divLinkContactate {
+    padding-top: 50px;
+
+    #linkContactate {
+      margin-bottom: 50px;
+      font-size: 400%;
+    }
+  }
+
+  /*================== INICIO CSS FIXIE ==================*/
+
+  .fixie {
+    font-size: 24vh;
+  }
+
+  .biciTitle {
+    font-size: 15vh;
+    padding-top: 50px;
+    text-shadow: none;
+  }
+  .artPagBici {
+    .bici1 {
+      width: 60%;
+    }
+
+    .bici2 {
+      width: 60%;
+    }
+
+    .bici3 {
+      width: 30%;
+    }
+  }
+
+  /*================== INICIO CSS INDUMENTARIA ==================*/
+  .indumentaria {
+    font-size: 24vh;
+  }
+
+  .carousel {
+    margin: 50px;
+  }
+
+  .artPagRemeras {
+    .remera1 {
+      width: 60%;
+    }
+
+    .remera2 {
+      width: 60%;
+    }
+
+    .remera3 {
+      width: 30%;
+    }
+  }
+
+  /*================== INICIO CSS CONTACTO ==================*/
+  #sectionContacto {
+    padding: 200px;
+
+    #form {
+      border-radius: 10px;
+      width: 100%;
+      margin-top: -1cm;
+
+      .divForm {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        width: 70%;
+
+        .boton {
+          margin-top: 10px;
+          margin-bottom: 10px;
+          padding: 10px;
+          font-size: 120%;
+        }
+
+        .inputForm {
+          width: 100%;
+          min-height: 40px;
+          font-size: 120%;
+          text-align: center;
+        }
+
+        label {
+          color: white;
+          font-size: 200%;
+        }
+      }
+    }
+  }
+
+  .gps {
+    background-image: linear-gradient(
+      rgba(255, 254, 254, 0),
+      rgba(43, 43, 43, 0.829)
+    );
+    padding: 40px;
+  }
+
+  .gps p {
+    color: rgb(0, 0, 0);
+    font-size: 150%;
+    width: 80%;
+    text-align: center;
+    border-radius: 10px;
+    background-color: rgb(247, 247, 247);
+    margin-right: 20px;
+    padding: 20px;
+  }
+
+  .gps iframe {
+    padding-bottom: 50px;
+    width: 100%;
+  }
+
+  /*================== INICIO CSS BICIS ==================*/
+
+  .artPagBici {
+    max-width: 50%;
+  }
+
+  /*================== INICIO CSS REMERAS ==================*/
+  .sectionPagRemeras {
+    .artPagRemeras {
+      margin: 100px;
+      width: 50%;
+
+      .imgPagRemeras {
+        max-width: 60%;
+      }
+    }
+  }
+  
+}
+
+@media only screen and (min-width: 1440px) {
+  /*================== INICIO CSS NAV ==================*/
+
+  .liLogo {
+    margin-left: 100px;
+  }
+
+  /*================== INICIO CSS INDEX ==================*/
+
+  .titleStreet {
+    font-size: 30vh;
+  }
+
+  #divVideo {
+    padding-right: 150px;
+    padding-left: 150px;
+  }
+
+  .titleMainIndex {
+    padding-top: 150px;
+    padding-bottom: 50px;
+    font-size: 600%;
+  }
+
+  #divMainIndex {
+    padding-bottom: 100px;
+    .imgMainIndex {
+      width: 35%;
+      height: 60%;
+    }
+
+    .parrafoImgIndex {
+      font-size: 300%;
+    }
+  }
+
+  /*================== INICIO CSS FOOTER ==================*/
+  .footer {
+    &__parrafo {
+      font-size: 200%;
+    }
+
+    &__ulRedes {
+      .footer__liRedes {
+        width: 10%;
+        height: 10%;
+
+        .footer__imgRedes {
+          width: 30%;
+          height: 30%;
+        }
+
+        .footer__imgRedes:hover {
+          width: 25%;
+        }
+      }
+    }
+  }
+  /*================== INICIO CSS NOSOTROS ==================*/
+
+  .nosotros {
+    font-size: 30vh;
+  }
+
+  .divMainTitle {
+    margin-top: 100px;
+
+    .titleArticle {
+      padding-top: 50px;
+      padding-bottom: 50px;
+      font-size: 13vh;
+    }
+  }
+
+  .divMainImage {
+    .divIconoP {
+      width: 70%;
+
+      .Iconos {
+        width: 8%;
+      }
+
+      .parrafosMainNosotros {
+        margin-right: 60px;
+        margin-left: 60px;
+        font-size: 250%;
+        width: 80%;
+      }
+    }
+
+    #foto1 {
+      margin-left: 150px;
+      width: 50%;
+      height: 500px;
+    }
+
+    #foto3 {
+      margin-left: 150px;
+      width: 50%;
+      height: 500px;
+    }
+  }
+
+  .divMainImage2 {
+    .divIconoP {
+      width: 70%;
+
+      .Iconos {
+        width: 8%;
+      }
+
+      .parrafosMainNosotros {
+        margin-right: 60px;
+        margin-left: 60px;
+        font-size: 250%;
+        width: 80%;
+      }
+    }
+
+    #foto2 {
+      margin-right: 150px;
+      width: 50%;
+      height: 500px;
+    }
+  }
+
+  .divLinkContactate {
+    padding-top: 20px;
+
+    #linkContactate {
+      margin-bottom: 50px;
+      font-size: 400%;
+    }
+  }
+
+  /*================== INICIO CSS FIXIE ==================*/
+
+  .fixie {
+    font-size: 24vh;
+  }
+
+  #artMainFixie {
+    grid-template-columns: 40% 40%;
+    grid-template-rows: 1fr;
+
+    .bici1 {
+      width: 50%;
+    }
+
+    .bici2 {
+      width: 50%;
+    }
+
+    .bici3 {
+      width: 26%;
+    }
+  }
+
+  /*================== INICIO CSS INDUMENTARIA ==================*/
+
+  .indumentaria {
+    font-size: 24vh;
+  }
+
+  .carousel {
+    margin-right: 300px;
+    margin-left: 300px;
+  }
+
+  #artMainIndumentaria {
+    grid-template-columns: 40% 40%;
+    grid-template-rows: 1fr;
+
+    .remera1 {
+      width: 50%;
+    }
+
+    .remera2 {
+      width: 50%;
+    }
+
+    .remera3 {
+      width: 26%;
+    }
+  }
+
+  /*================== INICIO CSS CONTACTO ==================*/
+
+  #sectionContacto {
+    padding-right: 400px;
+    padding-left: 400px;
+
+    #form {
+      .divForm {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        width: 50%;
+
+        .boton {
+          margin-top: 10px;
+          margin-bottom: 10px;
+          padding: 10px;
+          font-size: 150%;
+        }
+
+        .inputForm {
+          width: 100%;
+          min-height: 40px;
+          font-size: 120%;
+          text-align: center;
+        }
+
+        label {
+          color: white;
+          font-size: 200%;
+        }
+      }
+    }
+  }
+
+  .gps {
+    background-image: linear-gradient(
+      rgba(255, 254, 254, 0),
+      rgba(43, 43, 43, 0.829)
+    );
+    padding: 40px;
+  }
+
+  .gps p {
+    font-size: 170%;
+    width: 50%;
+    margin-right: 50px;
+    margin-left: 20px;
+    padding: 30px;
+  }
+
+  .gps iframe {
+    padding-bottom: 100px;
+    width: 50%;
+  }
+
+  /*================== INICIO CSS BICIS ==================*/
+
+  .artPagBici {
+    max-width: 40%;
+  }
+
+  /*================== INICIO CSS REMERAS ==================*/
+
+  .sectionPagRemeras {
+    .artPagRemeras {
+      margin: 100px;
+      width: 35%;
+
+    }
+  }
+  
+}

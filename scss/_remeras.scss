@@ -1,0 +1,72 @@
+
+
+@import "variables.scss";
+
+
+/*================== INICIO CSS REMERAS ==================*/
+
+.sectionPagRemeras {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    .artPagRemeras {
+      background-color: $bgProductos;
+      display: flex;
+      justify-content: center;
+      align-self: center;
+      flex-direction: column;
+  
+      .divDescripcion {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+  
+        .pPagRemeras {
+          font-weight: bold;
+          text-shadow: none;
+        }
+  
+        .divDescripcionRemeras {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-weight: bold;
+          background-color: rgba(255, 255, 255, 0.753);
+  
+          .precioProducto {
+            text-shadow: none;
+            font-weight: bold;
+            background-color: rgba(255, 255, 255, 0.733);
+          }
+        }
+      }
+  
+      .divPagRemera {
+        display: flex;
+        justify-content: center;
+        align-self: center;
+        flex-direction: column;
+  
+        .titlePagRemeras {
+          color: rgb(255, 255, 255);
+          text-align: center;
+        }
+  
+        .imgPagRemeras {
+          object-fit: contain;
+        }
+      }
+  
+      .divFildset {
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-end;
+      }
+  
+      .botonComprar {
+        text-align: center;
+      }
+    }
+  }
+  

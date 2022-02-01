@@ -1,0 +1,63 @@
+
+
+@import "variables.scss";
+
+/*================== INICIO CSS FIXIE ==================*/
+
+.fixie {
+    overflow: hidden;
+    text-decoration: none;
+    text-align: center;
+    color: $colorTituloPrincipal;
+    font-family: $tipografiaTitulos;
+    text-rendering: optimizeLegibility;
+    font-weight: bold;
+    background-image: $bgTituloPrincipal;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .biciTitle {
+    font-family: $tipografiaTitulos;
+    text-align: center;
+    text-shadow: none;
+  }
+  
+  #artMainFixie {
+    display: grid;
+  
+    .divbicis {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      border-radius: 40px;
+      background-color: rgb(155, 155, 155);
+      box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.63);
+  
+      .imgBici {
+        border-radius: 10px;
+        transition-duration: 0.3s;
+        object-fit: cover;
+        overflow: hidden;
+      }
+  
+      .imgBici:hover {
+        transform: scale(0.9);
+      }
+    }
+  }
+  
+  .precio {
+    text-align: center;
+    text-shadow: none;
+    font-weight: bold;
+  }
+  
+  .pTitle {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 100%;
+    font-weight: bolder;
+    text-shadow: none;
+  }

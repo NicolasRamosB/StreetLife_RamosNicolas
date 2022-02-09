@@ -1,0 +1,26 @@
+
+
+
+Hago entrega del desafío SASS II + SEO agregando:
+
+<SEO>
+
+# Keywords relacionados al sitio web replicado en todas las páginas. : "Indumentaria skater, fixie, cultura, Bmx, arte callejero, arte argentina, ropa argentina, fixie zona sur, deporte extremo argentina, graf, grafitis, bicicletas extremas, bicicletas zona sur, argentina extrema, deporte cultural, emprendimiento de ropa, movimientos zona sur" 
+
+# Descripciones diferentes para todas las páginas del sitio web.
+
+# Títulos Descriptivos en cada página.: "Street Life - "Página donde esta parado""
+
+# Comprimí imágenes y videos para que pese menos.
+
+<SEO>
+
+
+<SASS II>
+
+# Agregué MAXIN en los títulos principales y fotos de la página Nosotros. donde más se repetía el código
+
+# Agregué EXTEND en la clase divRemeras y divBicis conformando una clase "divRemerasBici"
+
+<SASS II>  
+

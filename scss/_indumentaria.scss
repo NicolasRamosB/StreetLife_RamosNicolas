@@ -5,30 +5,16 @@
 /*================== INICIO CSS INDUMENTARIA ==================*/
 
 .indumentaria {
-    overflow: hidden;
-    text-decoration: none;
-    text-align: center;
-    color: $colorTituloPrincipal;
-    font-family: $tipografiaTitulos;
-    text-rendering: optimizeLegibility;
-    font-weight: bold;
-    background-image: $bgTituloPrincipal;
-    background-size: cover;
-    background-position: center;
+  @include parametrosDeTiulos;
   }
   
   #artMainIndumentaria {
     display: grid;
   
     .divRemera {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      border-radius: 40px;
-      background-color: rgb(155, 155, 155);
-      box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.63);
-  
+      
+      @extend .divRemerasBici;
+
       .imgRemeras {
         border-radius: 10px;
         transition-duration: 0.3s;

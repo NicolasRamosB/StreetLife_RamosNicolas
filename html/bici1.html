@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
     <meta name="description" content="Bicicleta fixie CUADRO DE ACERO ALIVIANADO EN VARIADOS COLORES (CONSULTAR STOCK)
     -CUBIERTAS SEMITUBO EN COLOR NEGRO, BLANCO O BEIGE
     - FRENOS A HERRADURA O MAZA CONTRAPEDAL SIN COSTO ADICIONAL
@@ -13,8 +15,11 @@
     -PEDALES PLASTIFICADOS CON REFLECTORES INTEGRADOS
     -LLANTAS DE ALUMINIO DOBLE PARED (OPCION A TRIPLE PARED CON COSTO ADICIONAL)
     -PESO DE LA BICICLETA 12 KG. ">
-    <meta name="keywords" content="Indumentaria skater, fixie, cultura, Bmx, arte callejero, arte argentina, ropa argentina, fixie zona sur, deporte extremo argentina, graf, grafitis, bicicletas extremas, bicicletas zona sur, argentina extrema, deporte cultural, emprendimiento de ropa, movimientos zona sur">
+    <meta name="keywords"
+        content="Indumentaria skater, fixie, cultura, Bmx, arte callejero, arte argentina, ropa argentina, fixie zona sur, deporte extremo argentina, graf, grafitis, bicicletas extremas, bicicletas zona sur, argentina extrema, deporte cultural, emprendimiento de ropa, movimientos zona sur">
     <title>Street Life - Bicicleta 1</title>
+
+
     <link rel="icon" href="../img/iconostreetlife.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -26,17 +31,31 @@
         crossorigin="anonymous"></script>
     <link rel="stylesheet" type="text/css" href="../css/estilo.css">
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="../css/animate.css">
+    <script src="../js/wow.min.js" type="text/javascript"></script>
+
+    <script>
+        new WOW().init();
+    </script>
 </head>
 
 <body>
 
+
+
+
+
     <header class="sticky-top">
+
+
+        <!-- Navegador principal -->
 
         <nav class="navbar sticky-top navbar-expand-lg navbar-light">
 
             <div class="container-fluid">
-        
-                <a class="liLogo" href="../index.html">✯Street Life✯</a>
+
+                <a class="liLogo wow flipInX" href="../index.html">✯Street Life✯</a>
 
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
@@ -44,22 +63,64 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
-                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="collapse navbar-collapse wow fadeInRight" id="navbarNavAltMarkup">
+
+                    <div class="divNavCarrito wow fadeInRight">
+                        <a class="linkNavCarritoDesplegable" type="button" data-bs-toggle="modal"
+                            data-bs-target="#myModal0"> <img class="imgNavCarrito" src="../img/carrito2.png"
+                                alt="carrito2"> MI CARRITO <span class="position-sticky badge rounded-pill bg-danger"> 0
+                            </span></a>
+                    </div>
+
+
                     <ul class="navbar-nav">
                         <li class="liNav"><a class="linkNav" href="indumentaria.html">INDUMENTARIA</a></li>
                         <li class="liNav"><a class="linkNav active" href="fixie.html">FIXIE</a></li>
                         <li class="liNav"><a class="linkNav" href="nosotros.html">NOSOTROS</a></li>
                         <li class="liNav"><a class="linkNav " href="contacto.html">CONTACTO</a></li>
-                        <li class="liNavCarrito"><a class="linkNavCarrito " href="#"><img src="../img/carrito2.png"
-                                    alt="carrito2"></a></li>
+
                     </ul>
+                    <div class="divNavCarrito wow fadeInRight">
+                        <a class="linkNavCarrito " type="button" data-bs-toggle="modal" data-bs-target="#myModal0"><img
+                                class="imgNavCarrito" src="../img/carrito2.png" alt="carrito2"> <span
+                                class="position-absolute translate-middle badge rounded-pill bg-danger"> 0 </span> </a>
+
+                    </div>
                 </div>
 
             </div>
 
         </nav>
 
+
+        <!-- Carrito hecho en Modal -->
+
+        <div class="modal fade" id="myModal0" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content" role="document">
+                    <div class="modal-header">
+                        <p class="modal-title fs-3" id="exampleModalLabel">CARRITO DE COMPRAS</p>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body " style="height:300px;">
+                        <p style="text-align:center;" class="fs-5">No se ha añadido ningun producto a la lista.</p>
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="submit" class="btn btn-success ">Comprar</button>
+                        <button type="reset" class="btn btn-danger "> Restablecer </button>
+
+                    </div>
+                </div>
+            </div>
+
     </header>
+
+
+
+
+
 
     <main class="mainIndex">
 
@@ -69,23 +130,25 @@
 
                 <div class="divPagBici">
 
+                    <!-- Titulo e imagen Bicicleta 2 -->
+
                     <h2 class="titlePagBici">BICICLETA 1</h2>
                     <img src="../img/bici1.jpg" alt="bicicleta1" class="imgPagBici">
-                
-                    <div class="divDescripcion">
 
+                    <div class="divDescripcion">
+                        <!-- Precio e imagen de formas de pago. -->
                         <div class="divPrecios">
                             <p class="precioProducto">$110.000</p>
                             <img src="../img/formaspago.png" alt="Pago" class="formasDePago">
                         </div>
 
-                        
+                        <!-- Boton desplegable Descripcion del producto -->
                         <button class="btn btn-secondary p-3 m-3 " type="button" data-bs-toggle="collapse"
                             data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
                             DESCRIPCION
                         </button>
-                        
-                        
+
+
                         <div>
 
                             <div class="collapse collapse-vertical" id="collapseExample">
@@ -109,20 +172,31 @@
                     </div>
 
                 </div>
-                
-                    <input type="button" value="COMPRAR" class="botonComprar">
-               
+
+
+                <!-- Boton Comprar -->
+                <input type="button" value="COMPRAR" class="botonComprar">
+
+
+
             </article>
+
         </section>
+
     </main>
-    
+
+
+
+
+
+
     <footer class="footer">
 
-        <div >
+        <div>
 
             <p class="footer__parrafo">Seguinos en nuestras redes.</p>
 
-            <ul class="footer__ulRedes">
+            <ul class="footer__ulRedes wow flipInX">
                 <li class="footer__liRedes"><a href="https://www.instagram.com/street.life.concept/?hl=es"><img
                             class="footer__imgRedes" src="../img/instagram.png" alt="instagram"></a></li>
                 <li class="footer__liRedes"><a href="https://web.whatsapp.com/"><img class="footer__imgRedes"
@@ -138,7 +212,10 @@
         </div>
 
     </footer>
-    
+
+
+
+
 </body>
 
 </html>

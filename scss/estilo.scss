@@ -1,3 +1,5 @@
+
+
 @import "index.scss";
 @import "indumentaria.scss";
 @import "fixie.scss";
@@ -24,10 +26,15 @@
   font-style: normal;
 }
 
+
+
+
 body {
   background-image: url(../img/max-van-den-oetelaar-uymG7UVPXpI-unsplash.jpg);
   background-size: cover;
 }
+
+
 
 /*======================= NAVEGADOR =======================*/
 .navbar {
@@ -107,6 +114,8 @@ body {
   }
 }
 
+
+
 /*======================= FOOTER =======================*/
 .footer {
   background-color: rgba(0, 0, 0, 0.877);
@@ -142,6 +151,8 @@ ol,
 ul {
   padding-left: 0rem;
 }
+
+
 
 /*--------------------ANIMACION DE TITULO HEADER---------------------- */
 .animated-shadow {
@@ -180,6 +191,8 @@ ul {
       -2px 2px 0 #13f1fc, -1px 1px 0 #13f1fc;
   }
 }
+
+
 
 /*--------------------MEDIA QUERY---------------------- */
 
@@ -382,27 +395,47 @@ ul {
   #artMainFixie {
     padding-bottom: 100px;
     width: 100%;
-    grid-template-columns: 80%;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 70%;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-areas:
       "bici1"
       "bici2"
-      "bici3";
+      "bici3"
+      "bici4"
+      "bici5"
+      "bici6";
     justify-items: center;
     justify-content: center;
     align-items: center;
 
     .bici1 {
+      margin-top: 40px;
       grid-area: bici1;
     }
 
     .bici2 {
+      margin-top: 40px;
       grid-area: bici2;
     }
 
     .bici3 {
-      margin-top: 30px;
+      margin-top: 40px;
       grid-area: bici3;
+    }
+
+    .bici4 {
+      margin-top: 40px;
+      grid-area: bici4;
+    }
+
+    .bici5 {
+      margin-top: 40px;
+      grid-area: bici5;
+    }
+
+    .bici6 {
+      margin-top: 40px;
+      grid-area: bici6;
     }
 
     .imgBici {
@@ -450,33 +483,54 @@ ul {
   /*================== INICIO CSS INDUMENTARIA ==================*/
 
   .indumentaria {
-    font-size: 7.5vh;
+    font-size: 6vh;
+    
   }
 
   #artMainIndumentaria {
     padding-bottom: 100px;
     width: 100%;
-    grid-template-columns: 80%;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 70%;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-areas:
-      "bici1"
-      "bici2"
-      "bici3";
+      "remera1"
+      "remera2"
+      "remera3"
+      "remera4"
+      "remera5"
+      "remera6";
     justify-items: center;
     justify-content: center;
     align-items: center;
 
     .remera1 {
-      grid-area: bici1;
+      margin-top: 40px;
+      grid-area: remera1;
     }
 
     .remera2 {
-      grid-area: bici2;
+      margin-top: 40px;
+      grid-area: remera2;
     }
 
     .remera3 {
-      margin-top: 30px;
-      grid-area: bici3;
+      margin-top: 40px;
+      grid-area: remera3;
+    }
+
+    .remera4 {
+      margin-top: 40px;
+      grid-area: remera4;
+    }
+
+    .remera5 {
+      margin-top: 40px;
+      grid-area: remera5;
+    }
+
+    .remera6 {
+      margin-top: 40px;
+      grid-area: remera6;
     }
 
     .imgRemeras {
@@ -911,26 +965,47 @@ ul {
   #artMainFixie {
     padding-bottom: 100px;
     width: 100%;
-    grid-template-columns: 60%;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 50%;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-areas:
       "bici1"
       "bici2"
-      "bici3";
+      "bici3"
+      "bici4"
+      "bici5"
+      "bici6";
     justify-items: center;
     justify-content: center;
     align-items: center;
 
     .bici1 {
       grid-area: bici1;
+      margin-top: 40px;
     }
 
     .bici2 {
       grid-area: bici2;
+      margin-top: 40px;
     }
 
     .bici3 {
       grid-area: bici3;
+      margin-top: 40px;
+    }
+
+    .bici4 {
+      grid-area: bici4;
+      margin-top: 40px;
+    }
+
+    .bici5 {
+      grid-area: bici5;
+      margin-top: 40px;
+    }
+
+    .bici6 {
+      grid-area: bici6;
+      margin-top: 40px;
     }
 
     .imgBici {
@@ -1147,26 +1222,47 @@ ul {
   #artMainIndumentaria {
     padding-bottom: 100px;
     width: 100%;
-    grid-template-columns: 60%;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 50%;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-areas:
-      "bici1"
-      "bici2"
-      "bici3";
+      "remera1"
+      "remera2"
+      "remera3"
+      "remera4"
+      "remera5"
+      "remera6";
     justify-items: center;
     justify-content: center;
     align-items: center;
 
     .remera1 {
-      grid-area: bici1;
+      margin-top: 40px;
+      grid-area: remera1;
     }
 
     .remera2 {
-      grid-area: bici2;
+      margin-top: 40px;
+      grid-area: remera2;
     }
 
     .remera3 {
-      grid-area: bici3;
+      margin-top: 40px;
+      grid-area: remera3;
+    }
+
+    .remera4 {
+      margin-top: 40px;
+      grid-area: remera4;
+    }
+
+    .remera5 {
+      margin-top: 40px;
+      grid-area: remera5;
+    }
+
+    .remera6 {
+      margin-top: 40px;
+      grid-area: remera6;
     }
 
     .imgRemeras {
@@ -1378,11 +1474,12 @@ ul {
     padding-top: 100px;
     padding-bottom: 100px;
     width: 100%;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 1fr;
+    grid-template-columns: 50%  50%;
+    grid-template-rows: 1fr 1fr 1fr;
     grid-template-areas:
       "bici1  bici2"
-      "bici3  bici3";
+      "bici3  bici4"
+      "bici5  bici6";
     justify-items: center;
     justify-content: center;
     align-items: center;
@@ -1390,17 +1487,32 @@ ul {
 
     .bici1 {
       grid-area: bici1;
-      width: 80%;
+      width: 70%;
     }
 
     .bici2 {
       grid-area: bici2;
-      width: 80%;
+      width: 70%;
     }
 
     .bici3 {
       grid-area: bici3;
-      width: 45%;
+      width: 64%;
+    }
+
+    .bici4 {
+      grid-area: bici4;
+      width: 70%;
+    }
+
+    .bici5 {
+      grid-area: bici5;
+      width: 70%;
+    }
+
+    .bici6 {
+      grid-area: bici6;
+      width: 64%;
     }
 
     .imgBici {
@@ -1427,28 +1539,50 @@ ul {
     padding-bottom: 100px;
     width: 100%;
     grid-template-columns: 50% 50%;
-    grid-template-rows: 1fr;
+    grid-template-rows: 1fr 1fr;
     grid-template-areas:
-      "bici1  bici2"
-      "bici3  bici3";
+      "remera1  remera2"
+      "remera3  remera4"
+      "remera5  remera6";
     justify-items: center;
     justify-content: center;
     align-items: center;
     grid-row-gap: 50px;
 
     .remera1 {
-      grid-area: bici1;
-      width: 80%;
+      margin-top: 40px;
+      grid-area: remera1;
+      width: 60%;
     }
 
     .remera2 {
-      grid-area: bici2;
-      width: 80%;
+      margin-top: 40px;
+      grid-area: remera2;
+      width: 60%;
     }
 
     .remera3 {
-      grid-area: bici3;
-      width: 45%;
+      margin-top: 40px;
+      grid-area: remera3;
+      width: 60%;
+    }
+
+    .remera4 {
+      margin-top: 40px;
+      width: 60%;
+      grid-area: remera4;
+    }
+
+    .remera5 {
+      margin-top: 40px;
+      width:60%;
+      grid-area: remera5;
+    }
+
+    .remera6 {
+      margin-top: 40px;
+      width:60%;
+      grid-area: remera6;
     }
 
     .imgRemeras {
@@ -1562,12 +1696,13 @@ ul {
 }
 
 @media only screen and (max-width: 992px) {
+  
   /*================== NAVEGADOR EN MEDIA 992px ==================*/
 
   .navbar-expand-lg .navbar-nav {
     flex-direction: column;
-    align-items: flex-start;
-    justify-content: space-evenly;
+    align-items: center;
+    justify-content: center;
     width: 100%;
 
     .liNav {
@@ -1575,11 +1710,13 @@ ul {
       flex-direction: column;
       width: 100%;
       margin-top: 20px;
+      align-items: center;
+      justify-content: center;
 
       .linkNav {
+
         color: rgb(0, 0, 0);
         text-decoration: none;
-        width: 170px;
         text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.384);
         transition-duration: 0.3s, 0.4s;
         font-weight: bold;
@@ -1596,6 +1733,8 @@ ul {
         box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.747);
       }
 
+
+
       .active {
         color: white;
         background-color: rgba(0, 0, 0, 0.363);
@@ -1604,8 +1743,66 @@ ul {
     }
   }
 
+  .divNavCarrito{
+
+    
+    margin-top: 20px;
+
+    .linkNavCarritoDesplegable{
+      
+      display: block;
+      color: rgb(0, 0, 0);
+      text-decoration: none;
+      width: 170px;
+      text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.384);
+      transition-duration: 0.3s, 0.4s;
+      font-weight: bold;
+      font-size: 3vh;
+      padding: 10px;
+      border: 2px solid rgb(146, 146, 146);
+      text-align: center;
+      
+    }
+
+    .linkNavCarrito{
+      display: none;
+      
+    }
+  }
+
   .liLogo {
     font-size: 4.5vh;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+
+  /*================== NAVEGADOR EN MEDIA 992px ==================*/
+
+  .divNavCarrito{
+
+    
+
+    .linkNavCarritoDesplegable{
+      margin-top: 20px;
+      color: rgb(0, 0, 0);
+      text-decoration: none;
+      width: 170px;
+      text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.384);
+      transition-duration: 0.3s, 0.4s;
+      font-weight: bold;
+      padding: 10px;
+      border: 2px solid rgb(146, 146, 146);
+      text-align: center;
+      display:none
+    }
+
+    .linkNavCarrito{
+      display: block;
+
+      width: 150%;
+      
+    }
   }
 }
 
@@ -1614,6 +1811,18 @@ ul {
 
   .liLogo {
     margin-left: 20px;
+  }
+
+  .divNavCarrito{
+   
+    .linkNavCarritoDesplegable{
+      display: none;
+      
+    }
+    .linkNavCarrito{
+      display: block;
+      
+    }
   }
 
   /*================== INICIO CSS INDEX ==================*/
@@ -1737,17 +1946,43 @@ ul {
     padding-top: 50px;
     text-shadow: none;
   }
-  .artPagBici {
+  #artMainFixie {
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+      "bici1  bici2  bici3"
+      "bici4  bici5  bici6";
+
     .bici1 {
-      width: 60%;
+      grid-area: bici1;
+      width: 70%;
     }
 
     .bici2 {
-      width: 60%;
+      grid-area: bici2;
+      width: 70%;
     }
 
     .bici3 {
-      width: 30%;
+      grid-area: bici3;
+      width: 70%;
+    }
+    
+    .bici4 {
+      grid-area: bici4;
+      width: 70%;
+      
+    }
+
+    .bici5 {
+      grid-area: bici5;
+      width: 70%;
+    }
+
+    .bici6 {
+      grid-area: bici6;
+      width: 70%;
+      
     }
   }
 
@@ -1760,17 +1995,43 @@ ul {
     margin: 50px;
   }
 
-  .artPagRemeras {
+  #artMainIndumentaria {
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+      "remera1  remera2  remera3"
+      "remera4  remera5  remera6";
+
     .remera1 {
-      width: 60%;
+      grid-area: remera1;
+      width: 70%;
     }
 
     .remera2 {
-      width: 60%;
+      grid-area: remera2;
+      width: 70%;
     }
 
     .remera3 {
-      width: 30%;
+      grid-area: remera3;
+      width: 70%;
+    }
+    
+    .remera4 {
+      grid-area: remera4;
+      width: 70%;
+      
+    }
+
+    .remera5 {
+      grid-area: remera5;
+      width: 70%;
+    }
+
+    .remera6 {
+      grid-area: remera6;
+      width: 70%;
+      
     }
   }
 
@@ -1902,12 +2163,12 @@ ul {
         height: 10%;
 
         .footer__imgRedes {
-          width: 30%;
-          height: 30%;
+          width: 25%;
+          height: 25%;
         }
 
         .footer__imgRedes:hover {
-          width: 25%;
+          width: 20%;
         }
       }
     }
@@ -1990,19 +2251,42 @@ ul {
   }
 
   #artMainFixie {
-    grid-template-columns: 40% 40%;
-    grid-template-rows: 1fr;
+    grid-template-columns: 27% 27% 27%;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+      "bici1  bici2  bici3"
+      "bici4  bici5  bici6";
 
     .bici1 {
-      width: 50%;
+      grid-area: bici1;
+      width: 70%;
     }
 
     .bici2 {
-      width: 50%;
+      grid-area: bici2;
+      width: 70%;
     }
 
     .bici3 {
-      width: 26%;
+      grid-area: bici3;
+      width: 70%;
+    }
+    
+    .bici4 {
+      grid-area: bici4;
+      width: 70%;
+      
+    }
+
+    .bici5 {
+      grid-area: bici5;
+      width: 70%;
+    }
+
+    .bici6 {
+      grid-area: bici6;
+      width: 70%;
+      
     }
   }
 
@@ -2018,19 +2302,42 @@ ul {
   }
 
   #artMainIndumentaria {
-    grid-template-columns: 40% 40%;
-    grid-template-rows: 1fr;
+    grid-template-columns: 27% 27% 27%;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+      "remera1  remera2  remera3"
+      "remera4  remera5  remera6";
 
     .remera1 {
-      width: 50%;
+      grid-area: remera1;
+      width: 60%;
     }
 
     .remera2 {
-      width: 50%;
+      grid-area: remera2;
+      width: 60%;
     }
 
     .remera3 {
-      width: 26%;
+      grid-area: remera3;
+      width: 60%;
+    }
+    
+    .remera4 {
+      grid-area: remera4;
+      width: 60%;
+      
+    }
+
+    .remera5 {
+      grid-area: remera5;
+      width: 60%;
+    }
+
+    .remera6 {
+      grid-area: remera6;
+      width: 60%;
+      
     }
   }
 

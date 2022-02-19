@@ -1,3 +1,15 @@
+
+<!-- DESCRIPCION INDUMENTARIA:
+
+* HEADER CONFORMADO POR EL TITULO PRINCIPAL.
+
+* MAIN COMIENZA CON UN CARRUCEL HECHO EN BOOTSTRAP 
+
+* CARTAS DE PRODUCTOS CON INTERACCION EN LA IMAGEN ENLASADAS AL LINK DE COMPRA EN CADA UNA, CON UN HOVER. EN LA MISMA CARTA HAY INTERACCION CON "AÑADIR AL CARRITO"
+QUE AL CLICKEAR DE DESPLIEGA UNA ALERTA HECHA EN MODAL.
+
+*EN CADA UNO DE LOS ENLASES DEL PRODUCTO SE ENCUENTRAN: LAS INTERACCIONES DE TALLE, COLOR DE ROPA Y UN BOTON DONDE SE DESPLIEGA LA DESCRIPCION DEL MISMO PRODUCTO.   -->
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -5,9 +17,14 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Venta de ropa urban, brindamos las mejores telas del mercado argentino para que la comodidad de nuestros clientes y compañeros del deporte extremo, entregamos a todo el país con todas las formas de pago.">
-  <meta name="keywords" content="Indumentaria skater, fixie, cultura, Bmx, arte callejero, arte argentina, ropa argentina, fixie zona sur, deporte extremo argentina, graf, grafitis, bicicletas extremas, bicicletas zona sur, argentina extrema, deporte cultural, emprendimiento de ropa, movimientos zona sur">
+
+
+  <meta name="description"
+    content="Venta de ropa urban, brindamos las mejores telas del mercado argentino para que la comodidad de nuestros clientes y compañeros del deporte extremo, entregamos a todo el país con todas las formas de pago.">
+  <meta name="keywords"
+    content="Indumentaria skater, fixie, cultura, Bmx, arte callejero, arte argentina, ropa argentina, fixie zona sur, deporte extremo argentina, graf, grafitis, bicicletas extremas, bicicletas zona sur, argentina extrema, deporte cultural, emprendimiento de ropa, movimientos zona sur">
   <title>Street Life - Indumentaria</title>
+
 
   <link rel="icon" href="../img/iconostreetlife.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -21,40 +38,88 @@
     crossorigin="anonymous"></script>
   <link rel="stylesheet" type="text/css" href="../css/estilo.css">
 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  <link rel="stylesheet" href="../css/animate.css">
+  <script src="../js/wow.min.js" type="text/javascript"></script>
+
+  <script>
+    new WOW().init();
+  </script>
 
 </head>
 
 <body>
 
+
+  <!-- Navegador principal -->
+
   <nav class="navbar sticky-top navbar-expand-lg navbar-light">
 
     <div class="container-fluid">
 
-      <a class="liLogo" href="../index.html">✯Street Life✯</a>
+      <a class="liLogo wow flipInX" href="../index.html">✯Street Life✯</a>
 
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
         aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
 
-      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <ul class="navbar-nav">
+      <div class="collapse navbar-collapse wow fadeInRight" id="navbarNavAltMarkup">
+
+        <div class="divNavCarrito wow fadeInRight">
+          <a class="linkNavCarritoDesplegable" type="button" data-bs-toggle="modal" data-bs-target="#myModal0"> <img
+              class="imgNavCarrito" src="../img/carrito2.png" alt="carrito2"> MI CARRITO <span
+              class="position-sticky badge rounded-pill bg-danger"> 0 </span></a>
+        </div>
+
+        <ul class="navbar-nav ">
           <li class="liNav"><a class="linkNav active" href="#" aria-current="page">INDUMENTARIA</a></li>
           <li class="liNav"><a class="linkNav" href="fixie.html">FIXIE</a></li>
           <li class="liNav"><a class="linkNav" href="nosotros.html">NOSOTROS</a></li>
           <li class="liNav"><a class="linkNav" href="contacto.html">CONTACTO</a></li>
-          <li class="liNavCarrito"><a class="linkNavCarrito " href="#"><img src="../img/carrito2.png"
-                alt="carrito2"></a></li>
+
         </ul>
+        <div class="divNavCarrito wow fadeInRight">
+          <a class="linkNavCarrito " type="button" data-bs-toggle="modal" data-bs-target="#myModal0"><img
+              class="imgNavCarrito" src="../img/carrito2.png" alt="carrito2"> <span
+              class="position-absolute translate-middle badge rounded-pill bg-danger"> 0 </span> </a>
+
+        </div>
       </div>
 
     </div>
-    
+
   </nav>
 
   <header>
 
+    <!-- Titulo Indumentaria -->
+
     <h1 class="indumentaria container-fluid animated-shadow m-0 p-5">Indumentaria</h1>
+
+
+
+    <!-- Carrito hecho en Modal -->
+
+    <div class="modal fade" id="myModal0" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content" role="document">
+          <div class="modal-header">
+            <p class="modal-title fs-3" id="exampleModalLabel">CARRITO DE COMPRAS</p>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body " style="height:300px;">
+            <p style="text-align:center;" class="fs-5">No se ha añadido ningun producto a la lista.</p>
+
+          </div>
+          <div class="modal-footer">
+            <button type="submit" class="btn btn-success ">Comprar</button>
+            <button type="reset" class="btn btn-danger "> Restablecer </button>
+
+          </div>
+        </div>
+      </div>
 
   </header>
 
@@ -63,9 +128,14 @@
 
     <section>
 
-      <h2 class="biciTitle">Remeras</h2>
+      <!--Titulo Remeras -->
+      <h2 class="biciTitle wow fadeInUp">Remeras</h2>
 
-      <article id="carouselExampleIndicators" class="carousel slide pt-5 mb-5" data-bs-ride="carousel">
+
+
+      <!-- Carrucel de Fotos -->
+
+      <article id="carouselExampleIndicators" style="border: 2px solid rgb(70, 70, 70);" class="carousel slide p-1 mt-5 mb-5" data-bs-ride="carousel">
 
         <div class="carousel-indicators">
           <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
@@ -110,11 +180,20 @@
           <span class="visually-hidden">Next</span>
         </button>
 
+
+
       </article>
+
+
+      <!-- Cartas de Productos -->
 
       <article id="artMainIndumentaria">
 
-        <div class="remera1  divRemera">
+
+
+        <!-- REMERA 1 -->
+
+        <div class="remera1  divRemera wow fadeInUp">
           <a href="../html/remera1.html"><img src="../img/Remera1.jpg" alt="remera1"
               class="imgRemeras border border-dark"></a>
           <p class="pTitle">Remera 1 </p>
@@ -129,7 +208,7 @@
             <div class="modal-dialog">
               <div class="modal-content" role="document">
                 <div class="modal-header bg-success bg-opacity-75">
-                  <h5 class="modal-title  text-white" id="exampleModalLabel">REMERA 1 se ha añadido al carrito</h5>
+                  <h5 class="modal-title  text-white" id="exampleModalLabel">REMERA 1 SE HA AÑADIDO AL CARRITO</h5>
                   <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
               </div>
@@ -137,7 +216,12 @@
           </div>
         </div>
 
-        <div class="remera2  divRemera">
+
+
+
+        <!-- REMERA 2 -->
+
+        <div class="remera2  divRemera wow fadeInUp">
           <a href="../html/remera2.html"><img src="../img/remera2.jpg" alt="remera2"
               class="imgRemeras border border-dark"></a>
           <p class="pTitle">Remera 2</p>
@@ -152,7 +236,7 @@
             <div class="modal-dialog">
               <div class="modal-content" role="document">
                 <div class="modal-header bg-success bg-opacity-75">
-                  <h5 class="modal-title  text-white" id="exampleModalLabel">REMERA 2 se ha añadido al carrito</h5>
+                  <p class="modal-title  text-white" id="exampleModalLabel">REMERA 2 SE HA AÑADIDO AL CARRITO</p>
                   <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
               </div>
@@ -160,7 +244,10 @@
           </div>
         </div>
 
-        <div class="remera3 divRemera">
+
+        <!-- REMERA 3 -->
+
+        <div class="remera3 divRemera wow fadeInUp">
           <a href="../html/remera3.html"><img src="../img/remera3.jpg" alt="remera3"
               class="imgRemeras border border-dark"></a>
           <p class="pTitle">Remera 3 </p>
@@ -175,7 +262,7 @@
             <div class="modal-dialog">
               <div class="modal-content" role="document">
                 <div class="modal-header bg-success bg-opacity-75">
-                  <h5 class="modal-title  text-white" id="exampleModalLabel">REMERA 3 se ha añadido al carrito</h5>
+                  <p class="modal-title  text-white" id="exampleModalLabel">REMERA 3 SE HA AÑADIDO AL CARRITO</p>
                   <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
               </div>
@@ -184,33 +271,120 @@
 
         </div>
 
+
+        <!-- REMERA 4 -->
+
+        <div class="remera4 divRemera wow fadeInUp">
+          <a href="../html/remera4.html"><img src="../img/Remera1.jpg" alt="remera4"
+              class="imgRemeras border border-dark"></a>
+          <p class="pTitle">Remera 4 </p>
+          <p class="precio">$1450</p>
+          <a type="button" data-bs-toggle="modal" data-bs-target="#myModal7" class="aCarrito"><img class="carrito"
+              src="../img/carrito.png" alt="carrito"> Añadir al Carrito </a>
+
+
+          <!-- Alerta hecha en Modal -->
+          <div class="modal fade" id="myModal7" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content" role="document">
+                <div class="modal-header bg-success bg-opacity-75">
+                  <p class="modal-title  text-white" id="exampleModalLabel">REMERA 4 SE HA AÑADIDO AL CARRITO</p>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+
+        <!-- REMERA 5 -->
+
+        <div class="remera5 divRemera wow fadeInUp">
+          <a href="../html/remera5.html"><img src="../img/remera2.jpg" alt="remera5"
+              class="imgRemeras border border-dark"></a>
+          <p class="pTitle">Remera 5 </p>
+          <p class="precio">$1500</p>
+          <a type="button" data-bs-toggle="modal" data-bs-target="#myModal8" class="aCarrito"><img class="carrito"
+              src="../img/carrito.png" alt="carrito"> Añadir al Carrito </a>
+
+
+          <!-- Alerta hecha en Modal -->
+          <div class="modal fade" id="myModal8" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content" role="document">
+                <div class="modal-header bg-success bg-opacity-75">
+                  <p class="modal-title  text-white" id="exampleModalLabel">REMERA 5 SE HA AÑADIDO AL CARRITO</p>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- REMERA 6 -->
+
+        <div class="remera6 divRemera wow fadeInUp">
+          <a href="../html/remera6.html"><img src="../img/remera3.jpg" alt="remera6"
+              class="imgRemeras border border-dark"></a>
+          <p class="pTitle">Remera 6 </p>
+          <p class="precio">$1600</p>
+          <a type="button" data-bs-toggle="modal" data-bs-target="#myModal9" class="aCarrito"><img class="carrito"
+              src="../img/carrito.png" alt="carrito"> Añadir al Carrito </a>
+
+
+          <!-- Alerta hecha en Modal -->
+          <div class="modal fade" id="myModal9" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content" role="document">
+                <div class="modal-header bg-success bg-opacity-75">
+                  <p class="modal-title  text-white" id="exampleModalLabel">REMERA 6 SE HA AÑADIDO AL CARRITO</p>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
       </article>
+
     </section>
+
   </main>
+
+
+  <!-- Footer -->
 
   <footer class="footer">
 
-    <div >
+    <div>
 
-        <p class="footer__parrafo">Seguinos en nuestras redes.</p>
+      <p class="footer__parrafo">Seguinos en nuestras redes.</p>
 
-        <ul class="footer__ulRedes">
-            <li class="footer__liRedes"><a href="https://www.instagram.com/street.life.concept/?hl=es"><img
-                        class="footer__imgRedes" src="../img/instagram.png" alt="instagram"></a></li>
-            <li class="footer__liRedes"><a href="https://web.whatsapp.com/"><img class="footer__imgRedes"
-                        src="../img/whatsapp.png" alt="Wpp"></a></li>
-            <li class="footer__liRedes"><a href="https://es-la.facebook.com/"><img class="footer__imgRedes"
-                        src="../img/facebook.png" alt="Facebook"></a></li>
-        </ul>
+      <ul class="footer__ulRedes wow flipInX">
+        <li class="footer__liRedes"><a href="https://www.instagram.com/street.life.concept/?hl=es"><img
+              class="footer__imgRedes" src="../img/instagram.png" alt="instagram"></a></li>
+        <li class="footer__liRedes"><a href="https://web.whatsapp.com/"><img class="footer__imgRedes"
+              src="../img/whatsapp.png" alt="Wpp"></a></li>
+        <li class="footer__liRedes"><a href="https://es-la.facebook.com/"><img class="footer__imgRedes"
+              src="../img/facebook.png" alt="Facebook"></a></li>
+      </ul>
     </div>
 
     <div class="footer__divCR">
-        <a href="contacto.html" class="footer__atencionAlCliente"> Atencion al cliente </a>
-        <p>Copyright© - Street Life 2021</p>
+      <a href="contacto.html" class="footer__atencionAlCliente"> Atencion al cliente </a>
+      <p>Copyright© - Street Life 2021</p>
     </div>
 
-</footer>
-  
+  </footer>
+
+
+
 </body>
 
 </html>

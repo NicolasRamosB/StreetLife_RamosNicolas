@@ -9,13 +9,13 @@
   box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.63); }
 
 /*================== CSS INDEX ==================*/
-.divTitleIndex {
+#divTitleIndex {
   background-image: url(../img/callecongrafitis.jpg);
   background-size: cover;
   background-position: center;
   padding-top: 150px;
   padding-bottom: 100px; }
-  .divTitleIndex .titleStreet {
+  #divTitleIndex .titleStreet {
     margin-bottom: -1.5px;
     overflow: hidden;
     text-decoration: none;
@@ -24,7 +24,7 @@
     font-family: "iglesiaregular", sans-serif;
     text-rendering: optimizeLegibility;
     font-weight: bold; }
-  .divTitleIndex .pTitleIndex {
+  #divTitleIndex .pTitleIndex {
     font-family: "iglesiaregular", sans-serif;
     font-weight: 100;
     font-size: 6vh;
@@ -621,19 +621,30 @@ ul {
   #artMainFixie {
     padding-bottom: 100px;
     width: 100%;
-    grid-template-columns: 80%;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-areas: "bici1" "bici2" "bici3";
+    grid-template-columns: 70%;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: "bici1" "bici2" "bici3" "bici4" "bici5" "bici6";
     justify-items: center;
     justify-content: center;
     align-items: center; }
     #artMainFixie .bici1 {
+      margin-top: 40px;
       grid-area: bici1; }
     #artMainFixie .bici2 {
+      margin-top: 40px;
       grid-area: bici2; }
     #artMainFixie .bici3 {
-      margin-top: 30px;
+      margin-top: 40px;
       grid-area: bici3; }
+    #artMainFixie .bici4 {
+      margin-top: 40px;
+      grid-area: bici4; }
+    #artMainFixie .bici5 {
+      margin-top: 40px;
+      grid-area: bici5; }
+    #artMainFixie .bici6 {
+      margin-top: 40px;
+      grid-area: bici6; }
     #artMainFixie .imgBici {
       width: 100%;
       height: 100%; }
@@ -664,23 +675,34 @@ ul {
     font-size: 130%; }
   /*================== INICIO CSS INDUMENTARIA ==================*/
   .indumentaria {
-    font-size: 7.5vh; }
+    font-size: 6vh; }
   #artMainIndumentaria {
     padding-bottom: 100px;
     width: 100%;
-    grid-template-columns: 80%;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-areas: "bici1" "bici2" "bici3";
+    grid-template-columns: 70%;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: "remera1" "remera2" "remera3" "remera4" "remera5" "remera6";
     justify-items: center;
     justify-content: center;
     align-items: center; }
     #artMainIndumentaria .remera1 {
-      grid-area: bici1; }
+      margin-top: 40px;
+      grid-area: remera1; }
     #artMainIndumentaria .remera2 {
-      grid-area: bici2; }
+      margin-top: 40px;
+      grid-area: remera2; }
     #artMainIndumentaria .remera3 {
-      margin-top: 30px;
-      grid-area: bici3; }
+      margin-top: 40px;
+      grid-area: remera3; }
+    #artMainIndumentaria .remera4 {
+      margin-top: 40px;
+      grid-area: remera4; }
+    #artMainIndumentaria .remera5 {
+      margin-top: 40px;
+      grid-area: remera5; }
+    #artMainIndumentaria .remera6 {
+      margin-top: 40px;
+      grid-area: remera6; }
     #artMainIndumentaria .imgRemeras {
       width: 100%;
       height: 100%; }
@@ -978,18 +1000,30 @@ ul {
   #artMainFixie {
     padding-bottom: 100px;
     width: 100%;
-    grid-template-columns: 60%;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-areas: "bici1" "bici2" "bici3";
+    grid-template-columns: 50%;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: "bici1" "bici2" "bici3" "bici4" "bici5" "bici6";
     justify-items: center;
     justify-content: center;
     align-items: center; }
     #artMainFixie .bici1 {
-      grid-area: bici1; }
+      grid-area: bici1;
+      margin-top: 40px; }
     #artMainFixie .bici2 {
-      grid-area: bici2; }
+      grid-area: bici2;
+      margin-top: 40px; }
     #artMainFixie .bici3 {
-      grid-area: bici3; }
+      grid-area: bici3;
+      margin-top: 40px; }
+    #artMainFixie .bici4 {
+      grid-area: bici4;
+      margin-top: 40px; }
+    #artMainFixie .bici5 {
+      grid-area: bici5;
+      margin-top: 40px; }
+    #artMainFixie .bici6 {
+      grid-area: bici6;
+      margin-top: 40px; }
     #artMainFixie .imgBici {
       width: 100%;
       height: 100%; }
@@ -1134,18 +1168,30 @@ ul {
   #artMainIndumentaria {
     padding-bottom: 100px;
     width: 100%;
-    grid-template-columns: 60%;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-areas: "bici1" "bici2" "bici3";
+    grid-template-columns: 50%;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: "remera1" "remera2" "remera3" "remera4" "remera5" "remera6";
     justify-items: center;
     justify-content: center;
     align-items: center; }
     #artMainIndumentaria .remera1 {
-      grid-area: bici1; }
+      margin-top: 40px;
+      grid-area: remera1; }
     #artMainIndumentaria .remera2 {
-      grid-area: bici2; }
+      margin-top: 40px;
+      grid-area: remera2; }
     #artMainIndumentaria .remera3 {
-      grid-area: bici3; }
+      margin-top: 40px;
+      grid-area: remera3; }
+    #artMainIndumentaria .remera4 {
+      margin-top: 40px;
+      grid-area: remera4; }
+    #artMainIndumentaria .remera5 {
+      margin-top: 40px;
+      grid-area: remera5; }
+    #artMainIndumentaria .remera6 {
+      margin-top: 40px;
+      grid-area: remera6; }
     #artMainIndumentaria .imgRemeras {
       width: 100%;
       height: 100%; }
@@ -1280,22 +1326,31 @@ ul {
     padding-top: 100px;
     padding-bottom: 100px;
     width: 100%;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 1fr;
-    grid-template-areas: "bici1  bici2" "bici3  bici3";
+    grid-template-columns: 50%  50%;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: "bici1  bici2" "bici3  bici4" "bici5  bici6";
     justify-items: center;
     justify-content: center;
     align-items: center;
     grid-row-gap: 50px; }
     #artMainFixie .bici1 {
       grid-area: bici1;
-      width: 80%; }
+      width: 70%; }
     #artMainFixie .bici2 {
       grid-area: bici2;
-      width: 80%; }
+      width: 70%; }
     #artMainFixie .bici3 {
       grid-area: bici3;
-      width: 45%; }
+      width: 64%; }
+    #artMainFixie .bici4 {
+      grid-area: bici4;
+      width: 70%; }
+    #artMainFixie .bici5 {
+      grid-area: bici5;
+      width: 70%; }
+    #artMainFixie .bici6 {
+      grid-area: bici6;
+      width: 64%; }
     #artMainFixie .imgBici {
       width: 100%;
       height: 100%; }
@@ -1311,21 +1366,36 @@ ul {
     padding-bottom: 100px;
     width: 100%;
     grid-template-columns: 50% 50%;
-    grid-template-rows: 1fr;
-    grid-template-areas: "bici1  bici2" "bici3  bici3";
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "remera1  remera2" "remera3  remera4" "remera5  remera6";
     justify-items: center;
     justify-content: center;
     align-items: center;
     grid-row-gap: 50px; }
     #artMainIndumentaria .remera1 {
-      grid-area: bici1;
-      width: 80%; }
+      margin-top: 40px;
+      grid-area: remera1;
+      width: 60%; }
     #artMainIndumentaria .remera2 {
-      grid-area: bici2;
-      width: 80%; }
+      margin-top: 40px;
+      grid-area: remera2;
+      width: 60%; }
     #artMainIndumentaria .remera3 {
-      grid-area: bici3;
-      width: 45%; }
+      margin-top: 40px;
+      grid-area: remera3;
+      width: 60%; }
+    #artMainIndumentaria .remera4 {
+      margin-top: 40px;
+      width: 60%;
+      grid-area: remera4; }
+    #artMainIndumentaria .remera5 {
+      margin-top: 40px;
+      width: 60%;
+      grid-area: remera5; }
+    #artMainIndumentaria .remera6 {
+      margin-top: 40px;
+      width: 60%;
+      grid-area: remera6; }
     #artMainIndumentaria .imgRemeras {
       width: 100%;
       height: 100%; }
@@ -1399,18 +1469,19 @@ ul {
   /*================== NAVEGADOR EN MEDIA 992px ==================*/
   .navbar-expand-lg .navbar-nav {
     flex-direction: column;
-    align-items: flex-start;
-    justify-content: space-evenly;
+    align-items: center;
+    justify-content: center;
     width: 100%; }
     .navbar-expand-lg .navbar-nav .liNav {
       display: flex;
       flex-direction: column;
       width: 100%;
-      margin-top: 20px; }
+      margin-top: 20px;
+      align-items: center;
+      justify-content: center; }
       .navbar-expand-lg .navbar-nav .liNav .linkNav {
         color: black;
         text-decoration: none;
-        width: 170px;
         text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.384);
         transition-duration: 0.3s, 0.4s;
         font-weight: bold;
@@ -1427,13 +1498,51 @@ ul {
         color: white;
         background-color: rgba(0, 0, 0, 0.363);
         box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.747); }
+  .divNavCarrito {
+    margin-top: 20px; }
+    .divNavCarrito .linkNavCarritoDesplegable {
+      display: block;
+      color: black;
+      text-decoration: none;
+      width: 170px;
+      text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.384);
+      transition-duration: 0.3s, 0.4s;
+      font-weight: bold;
+      font-size: 3vh;
+      padding: 10px;
+      border: 2px solid #929292;
+      text-align: center; }
+    .divNavCarrito .linkNavCarrito {
+      display: none; }
   .liLogo {
     font-size: 4.5vh; } }
+
+@media only screen and (min-width: 992px) {
+  /*================== NAVEGADOR EN MEDIA 992px ==================*/
+  .divNavCarrito .linkNavCarritoDesplegable {
+    margin-top: 20px;
+    color: black;
+    text-decoration: none;
+    width: 170px;
+    text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.384);
+    transition-duration: 0.3s, 0.4s;
+    font-weight: bold;
+    padding: 10px;
+    border: 2px solid #929292;
+    text-align: center;
+    display: none; }
+  .divNavCarrito .linkNavCarrito {
+    display: block;
+    width: 150%; } }
 
 @media only screen and (min-width: 1024px) {
   /*================== NAV ==================*/
   .liLogo {
     margin-left: 20px; }
+  .divNavCarrito .linkNavCarritoDesplegable {
+    display: none; }
+  .divNavCarrito .linkNavCarrito {
+    display: block; }
   /*================== INICIO CSS INDEX ==================*/
   .titleStreet {
     font-size: 25vh; }
@@ -1510,23 +1619,55 @@ ul {
     font-size: 15vh;
     padding-top: 50px;
     text-shadow: none; }
-  .artPagBici .bici1 {
-    width: 60%; }
-  .artPagBici .bici2 {
-    width: 60%; }
-  .artPagBici .bici3 {
-    width: 30%; }
+  #artMainFixie {
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "bici1  bici2  bici3" "bici4  bici5  bici6"; }
+    #artMainFixie .bici1 {
+      grid-area: bici1;
+      width: 70%; }
+    #artMainFixie .bici2 {
+      grid-area: bici2;
+      width: 70%; }
+    #artMainFixie .bici3 {
+      grid-area: bici3;
+      width: 70%; }
+    #artMainFixie .bici4 {
+      grid-area: bici4;
+      width: 70%; }
+    #artMainFixie .bici5 {
+      grid-area: bici5;
+      width: 70%; }
+    #artMainFixie .bici6 {
+      grid-area: bici6;
+      width: 70%; }
   /*================== INICIO CSS INDUMENTARIA ==================*/
   .indumentaria {
     font-size: 24vh; }
   .carousel {
     margin: 50px; }
-  .artPagRemeras .remera1 {
-    width: 60%; }
-  .artPagRemeras .remera2 {
-    width: 60%; }
-  .artPagRemeras .remera3 {
-    width: 30%; }
+  #artMainIndumentaria {
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "remera1  remera2  remera3" "remera4  remera5  remera6"; }
+    #artMainIndumentaria .remera1 {
+      grid-area: remera1;
+      width: 70%; }
+    #artMainIndumentaria .remera2 {
+      grid-area: remera2;
+      width: 70%; }
+    #artMainIndumentaria .remera3 {
+      grid-area: remera3;
+      width: 70%; }
+    #artMainIndumentaria .remera4 {
+      grid-area: remera4;
+      width: 70%; }
+    #artMainIndumentaria .remera5 {
+      grid-area: remera5;
+      width: 70%; }
+    #artMainIndumentaria .remera6 {
+      grid-area: remera6;
+      width: 70%; }
   /*================== INICIO CSS CONTACTO ==================*/
   #sectionContacto {
     padding: 200px; }
@@ -1604,10 +1745,10 @@ ul {
     width: 10%;
     height: 10%; }
     .footer__ulRedes .footer__liRedes .footer__imgRedes {
-      width: 30%;
-      height: 30%; }
+      width: 25%;
+      height: 25%; }
     .footer__ulRedes .footer__liRedes .footer__imgRedes:hover {
-      width: 25%; }
+      width: 20%; }
   /*================== INICIO CSS NOSOTROS ==================*/
   .nosotros {
     font-size: 30vh; }
@@ -1659,14 +1800,27 @@ ul {
   .fixie {
     font-size: 24vh; }
   #artMainFixie {
-    grid-template-columns: 40% 40%;
-    grid-template-rows: 1fr; }
+    grid-template-columns: 27% 27% 27%;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "bici1  bici2  bici3" "bici4  bici5  bici6"; }
     #artMainFixie .bici1 {
-      width: 50%; }
+      grid-area: bici1;
+      width: 70%; }
     #artMainFixie .bici2 {
-      width: 50%; }
+      grid-area: bici2;
+      width: 70%; }
     #artMainFixie .bici3 {
-      width: 26%; }
+      grid-area: bici3;
+      width: 70%; }
+    #artMainFixie .bici4 {
+      grid-area: bici4;
+      width: 70%; }
+    #artMainFixie .bici5 {
+      grid-area: bici5;
+      width: 70%; }
+    #artMainFixie .bici6 {
+      grid-area: bici6;
+      width: 70%; }
   /*================== INICIO CSS INDUMENTARIA ==================*/
   .indumentaria {
     font-size: 24vh; }
@@ -1674,14 +1828,27 @@ ul {
     margin-right: 300px;
     margin-left: 300px; }
   #artMainIndumentaria {
-    grid-template-columns: 40% 40%;
-    grid-template-rows: 1fr; }
+    grid-template-columns: 27% 27% 27%;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "remera1  remera2  remera3" "remera4  remera5  remera6"; }
     #artMainIndumentaria .remera1 {
-      width: 50%; }
+      grid-area: remera1;
+      width: 60%; }
     #artMainIndumentaria .remera2 {
-      width: 50%; }
+      grid-area: remera2;
+      width: 60%; }
     #artMainIndumentaria .remera3 {
-      width: 26%; }
+      grid-area: remera3;
+      width: 60%; }
+    #artMainIndumentaria .remera4 {
+      grid-area: remera4;
+      width: 60%; }
+    #artMainIndumentaria .remera5 {
+      grid-area: remera5;
+      width: 60%; }
+    #artMainIndumentaria .remera6 {
+      grid-area: remera6;
+      width: 60%; }
   /*================== INICIO CSS CONTACTO ==================*/
   #sectionContacto {
     padding-right: 400px;

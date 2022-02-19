@@ -1,3 +1,8 @@
+ <!-- DESCRIPCION NOSOTROS:
+
+*MAIN CONFORMADO POR ARTICULOS DE INFORMACION PARA EL USIARIO. Y SE LE AGREGA UNA INTERACCION CON UN HOVER AL FINAL EN EL PARRAFO "CONTACTATE CON NOSOTROS"-->
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -5,10 +10,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content=" ¿Queres conocernos más? Si te gusta el deporte extremo podés formar parte de nuestra comunidad donde te brindaremos el respeto y la alegría por el arte urbano, junto con descuentos en nuestros productos. ">
-    <meta name="keywords" content="Indumentaria, Local de Ropa, Remeras, Indumentaria skater, fixie, cultura, Bmx, arte callejero, arte urbano, arte argentina, ropa argentina, fixie zona sur, deporte extremo argentina, graf, grafitis, bicicletas extremas, bicicletas zona sur, argentina extrema, deporte cultural, emprendimiento de ropa, movimientos zona sur, cultura">
+
+
+    <meta name="description"
+        content=" ¿Queres conocernos más? Si te gusta el deporte extremo podés formar parte de nuestra comunidad donde te brindaremos el respeto y la alegría por el arte urbano, junto con descuentos en nuestros productos. ">
+    <meta name="keywords"
+        content="Indumentaria, Local de Ropa, Remeras, Indumentaria skater, fixie, cultura, Bmx, arte callejero, arte urbano, arte argentina, ropa argentina, fixie zona sur, deporte extremo argentina, graf, grafitis, bicicletas extremas, bicicletas zona sur, argentina extrema, deporte cultural, emprendimiento de ropa, movimientos zona sur, cultura">
     <title>Street Life - Nosotros</title>
-    
+
     <link rel="icon" href="../img/iconostreetlife.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,31 +29,52 @@
         crossorigin="anonymous"></script>
     <link rel="stylesheet" type="text/css" href="../css/estilo.css">
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="../css/animate.css">
+    <script src="../js/wow.min.js" type="text/javascript"></script>
+
+    <script>
+        new WOW().init();
+    </script>
 </head>
 
 <body>
 
+    <!-- Navegador principal -->
 
     <nav class="navbar sticky-top navbar-expand-lg navbar-light">
 
         <div class="container-fluid">
 
-            <a class="liLogo" href="../index.html">✯Street Life✯</a>
+            <a class="liLogo wow flipInX" href="../index.html">✯Street Life✯</a>
 
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
                 aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <ul class="navbar-nav">
+            <div class="collapse navbar-collapse wow fadeInRight" id="navbarNavAltMarkup">
+
+                <div class="divNavCarrito wow fadeInRight">
+                    <a class="linkNavCarritoDesplegable" type="button" data-bs-toggle="modal"
+                        data-bs-target="#myModal0"> <img class="imgNavCarrito" src="../img/carrito2.png" alt="carrito2">
+                        MI CARRITO <span class="position-sticky badge rounded-pill bg-danger"> 0 </span></a>
+                </div>
+
+
+                <ul class="navbar-nav ">
                     <li class="liNav"><a class="linkNav " href="indumentaria.html">INDUMENTARIA</a></li>
                     <li class="liNav"><a class="linkNav" href="fixie.html">FIXIE</a></li>
                     <li class="liNav"><a class="linkNav active" href="#" aria-current="page">NOSOTROS</a></li>
                     <li class="liNav"><a class="linkNav" href="contacto.html">CONTACTO</a></li>
-                    <li class="liNavCarrito"><a class="linkNavCarrito " href="#"><img src="../img/carrito2.png"
-                                alt="carrito2"></a></li>
+
                 </ul>
+                <div class="divNavCarrito wow fadeInRight">
+                    <a class="linkNavCarrito " type="button" data-bs-toggle="modal" data-bs-target="#myModal0"><img
+                            class="imgNavCarrito" src="../img/carrito2.png" alt="carrito2"> <span
+                            class="position-absolute translate-middle badge rounded-pill bg-danger"> 0 </span> </a>
+
+                </div>
             </div>
 
         </div>
@@ -54,9 +84,38 @@
 
     <header>
 
+
+        <!-- Titulo Nosotros -->
+
         <div class="divH1">
             <h1 class="nosotros container-fluid animated-shadow m-0 p-5">Nosotros</h1>
         </div>
+
+
+        <!-- Carrito hecho en Modal -->
+
+        <div class="modal fade" id="myModal0" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content" role="document">
+                    <div class="modal-header">
+                        <p class="modal-title fs-3" id="exampleModalLabel">CARRITO DE COMPRAS</p>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body " style="height:300px;">
+                        <p style="text-align:center;" class="fs-5">No se ha añadido ningun producto a la lista.</p>
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="submit" class="btn btn-success ">Comprar</button>
+                        <button type="reset" class="btn btn-danger "> Restablecer </button>
+
+                    </div>
+                </div>
+            </div>
+
+
+
 
     </header>
 
@@ -65,16 +124,23 @@
 
         <section id="sectionNosotros">
 
+            <!-- Primer Titulo Imagen y descripcion -->
+
             <article class="articlesMain">
 
+
+
                 <div class="divMainTitle">
-                    <h3 class="titleArticle"> Comunidad </h3>
+                    <h3 class="titleArticle wow fadeInUp"> Comunidad </h3>
                 </div>
 
-                <div class="divMainImage">
+
+
+
+                <div class="divMainImage wow fadeInLeft">
                     <img src="../img/DSC_0792.jpg" alt="comunidad" id="foto1">
 
-                    <div class="divIconoP">
+                    <div class="divIconoP ">
                         <img src="../img/pulso.png" alt="pulso" class="Iconos">
                         <p class="parrafosMainNosotros">Con Street Life formamos una comunidad muy unida por la amistad
                             y el
@@ -83,18 +149,24 @@
                             parte
                             del arte callejero y el deporte extremo.</p>
                     </div>
-
                 </div>
 
             </article>
 
+
+
+            <!-- Segundo Titulo Imagen y descripcion -->
+
             <article class="articlesMain">
 
                 <div class="divMainTitle">
-                    <h4 class="titleArticle ">Nuestros Productos</h4>
+                    <h4 class="titleArticle wow fadeInUp ">Nuestros Productos</h4>
                 </div>
 
-                <div class="divMainImage2">
+
+
+
+                <div class="divMainImage2 wow fadeInRight">
 
                     <img src="../img/ropadoblada.jpg" alt="ropadoblada" id="foto2">
 
@@ -106,18 +178,23 @@
                             nuestros
                             clientes y compañeros, sin dañar el medio ambiente.</p>
                     </div>
-            
+
                 </div>
 
             </article>
 
+
+
+
+            <!-- Tercer Titulo Imagen y descripcion -->
+
             <article class="articlesMain">
 
-                <div class="divMainTitle">
+                <div class="divMainTitle wow fadeInUp">
                     <h5 class="titleArticle">Cultura</h5>
                 </div>
 
-                <div class="divMainImage">
+                <div class="divMainImage wow fadeInLeft">
 
                     <img src="../img/DSC_2204.jpg" alt="pancarta" id="foto3">
 
@@ -128,31 +205,39 @@
                             más, el respeto y alegría por el arte y el deporte extremo. Que nos causa adrenalina en cada
                             momento que nos enfrentamos a la calle. Sin criticar, apoyando siempre al otro.</p>
                     </div>
-                    
+
                 </div>
 
-                <div class="divLinkContactate">
+                <div class="divLinkContactate wow flipInX">
                     <a href="contacto.html" id="linkContactate"> ¡Contactate con nosotros! </a>
                 </div>
 
             </article>
 
+
+
+
+
         </section>
 
     </main>
 
+
+
+    <!-- Footer -->
+
     <footer class="footer">
 
-        <div >
+        <div>
 
             <p class="footer__parrafo">Seguinos en nuestras redes.</p>
 
-            <ul class="footer__ulRedes">
-                <li class="footer__liRedes"><a href="https://www.instagram.com/street.life.concept/?hl=es"><img
+            <ul class="footer__ulRedes wow flipInX">
+                <li class="footer__liRedes  "><a href="https://www.instagram.com/street.life.concept/?hl=es"><img
                             class="footer__imgRedes" src="../img/instagram.png" alt="instagram"></a></li>
-                <li class="footer__liRedes"><a href="https://web.whatsapp.com/"><img class="footer__imgRedes"
+                <li class="footer__liRedes "><a href="https://web.whatsapp.com/"><img class="footer__imgRedes"
                             src="../img/whatsapp.png" alt="Wpp"></a></li>
-                <li class="footer__liRedes"><a href="https://es-la.facebook.com/"><img class="footer__imgRedes"
+                <li class="footer__liRedes "><a href="https://es-la.facebook.com/"><img class="footer__imgRedes"
                             src="../img/facebook.png" alt="Facebook"></a></li>
             </ul>
         </div>
@@ -163,6 +248,7 @@
         </div>
 
     </footer>
+
 
 
 </body>
